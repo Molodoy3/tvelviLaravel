@@ -1,0 +1,137 @@
+.footer {
+    background-color: #000;
+    @include adaptiv-value('padding-top', 46, 29, 1);
+    padding-bottom: rem(25);
+    color: #999999;
+    position: relative;
+    &__container {}
+
+    &__main {
+        @media (max-width: $md4){
+            text-align: center;
+        }
+        @include adaptiv-value('padding-bottom', 24, 21.5, 1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        @media (min-width: $md4){
+            display: flex;
+            justify-content: space-between;
+            column-gap: rem(15);
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        @media (max-width: $md4){
+            margin-bottom: rem(24);
+        }
+    }
+
+    &__menu {}
+
+    &__list {
+        @media (max-width: $md4){
+            justify-content: center;
+            margin-bottom: rem(26.25);
+        }
+        display: flex;
+        @include adaptiv-value('column-gap', 41, 17, 1);
+        flex-wrap: wrap;
+        row-gap: rem(6);
+        a {
+            @include adaptiv-value('font-size', 16, 12, 1);
+            color: #E9E9E9;
+            transition: color 0.3s ease;
+            &:focus {
+                color: var(--red);
+            }
+            @media (any-hover: hover) {
+                &:hover{
+                    color: var(--red);
+                }
+            }
+        }
+    }
+
+    &__links {
+        text-align: right;
+        @media (max-width: $md4){
+            text-align: center;
+        }
+    }
+
+    &__social-list {
+        @media (max-width: $md4){
+            justify-content: center;
+        }
+        display: flex;
+        column-gap: rem(13.11);
+        font-size: rem(27);
+        color: #fff;
+        margin-bottom: rem(11.5);
+        @media (max-width: $md4){
+            margin-bottom: rem(15);
+        }
+        a {
+            transition: color 0.3s ease;
+            &:focus {
+                color: var(--red);
+            }
+            @media (any-hover: hover) {
+                &:hover{
+                    color: var(--red);
+                }
+            }
+        }
+    }
+
+    &__sitemap {
+
+        display: inline-block;
+        @media (max-width: $md4){
+            text-align: center;
+        }
+        transition: color 0.3s ease;
+        &:focus {
+            color: var(--red);
+        }
+        @media (any-hover: hover) {
+            &:hover{
+                color: var(--red);
+            }
+        }
+    }
+
+    &__bottom {
+        @media (max-width: $md4){
+            text-align: center;
+        }
+        @include adaptiv-value('padding-top', 25.5, 22.5, 1);
+       
+        @include adaptiv-value('font-size', 16, 12, 1);
+        @media (min-width: $md4){
+            display: flex;
+            justify-content: space-between;
+            column-gap: rem(15);
+        }
+    }
+
+    &__info {
+        line-height: 140%;
+        @media (max-width: $md4){
+            margin-bottom: rem(10);
+        }
+    }
+
+    &__politic {
+        line-height: 140%;
+        transition: color 0.3s ease;
+        &:focus {
+            color: var(--red);
+        }
+        @media (any-hover: hover) {
+            &:hover{
+                color: var(--red);
+            }
+        }
+    }
+}

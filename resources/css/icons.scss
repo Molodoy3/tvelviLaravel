@@ -1,0 +1,62 @@
+
+%ic {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-asx-font-smoothing: grasyscale;
+}
+
+[class^="ic-"],
+[class*="ic-"] {
+  &::before {
+    @extend %ic;
+    display: block;
+  }
+}
+
+.ic-arrow:before {
+  content: "\e901";
+}
+.ic-individ:before {
+  content: "\e900";
+}
+.ic-quotes:before {
+  content: "\e902";
+}
+.ic-support:before {
+  content: "\e904";
+}
+.ic-tick:before {
+  content: "\e906";
+}
+.ic-clock:before {
+  content: "\e908";
+}
+.ic-people:before {
+  content: "\e90a";
+}
+.ic-srocks:before {
+  content: "\e90c";
+}
+.ic-telephone:before {
+  content: "\e90e";
+}
+.ic-star:before {
+  content: "\e910";
+}
+.ic-arrow-link:before {
+  content: "\e903";
+}
+.ic-telegram:before {
+  content: "\e905";
+}
+.ic-vk:before {
+  content: "\e907";
+}
+.ic-whatsapp:before {
+  content: "\e909";
+}
