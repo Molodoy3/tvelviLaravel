@@ -1,4 +1,5 @@
-<script setup>
+<script setup lang="ts">
+
 const currentLink = new URL(location.href).pathname.split('/').pop();
 
 function isWhiteHeader() {
@@ -31,10 +32,9 @@ function isActiveLink(route) {
                                     <div data-spoller tabindex='-1' class="menu__arrow ic-arrow"></div>
                                     <div class="menu__sub-list">
                                         <ul>
-                                            <li><a href="" class="menu__sub-link">Услуги 1</a></li>
-                                            <li><a href="" class="menu__sub-link">Услуги 2</a></li>
-                                            <li><a href="" class="menu__sub-link">Услуги 3</a></li>
-                                            <li><a href="" class="menu__sub-link">Услуги 4</a></li>
+                                            <li v-for="service in $page.props.services[0]">
+                                                <a :href="route('service', service.id)" class="menu__sub-link">{{service.altTitle}}</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </li>

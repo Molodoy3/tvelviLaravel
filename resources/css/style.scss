@@ -66,7 +66,9 @@ body {
         color: var(--red);
     }
 }
-
+#app{
+    height: 100%;
+}
 .main-text {
     line-height: perc(17, 14);
     @include adaptiv-value('font-size', 20, 14, 1);
@@ -104,6 +106,9 @@ body {
             background: rgb(212, 72, 56);
         }
     }
+}
+.processing{
+    opacity: .7;
 }
 
 .button-more {
@@ -794,6 +799,10 @@ mark {
 
         width: 100%;
 
+        &.error{
+            border: 1px solid var(--red);
+        }
+
         @media (max-width: $md4) {
             &:not(:last-child) {
                 margin-bottom: rem(8);
@@ -827,7 +836,9 @@ mark {
         @include adaptiv-value('padding-right', 31, 14, 1);
         @include adaptiv-value('font-size', 14, 12, 1);
         line-height: perc(15, 12);
-
+        &.error{
+            border: 1px solid var(--red);
+        }
         &::placeholder {
             color: rgb(153, 153, 153);
         }
@@ -1362,6 +1373,10 @@ mark {
         @include adaptiv-value('font-size', 32, 16, 1);
         font-family: "Micra", sans-serif;
         line-height: perc(24, 16);
+
+        word-break: break-all;
+
+
     }
 
     &__text {

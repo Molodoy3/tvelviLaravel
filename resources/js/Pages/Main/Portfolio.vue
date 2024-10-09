@@ -68,7 +68,7 @@ import {Head} from "@inertiajs/vue3";
             <div class="cases__item cases__item_grey">
                 <picture>
                     <source srcset='../../../img/portfolio/44.webp' type='image/webp'>
-                    <img class="cases__background-case" src='../../../img/portfolio/44.jpeg.jpeg' alt='backgound case'>
+                    <img class="cases__background-case" src='../../../img/portfolio/44.jpeg' alt='backgound case'>
                 </picture>
                 <picture>
                     <source srcset='../../../img/portfolio/backgound-mobile-speak.webp' type='image/webp'>

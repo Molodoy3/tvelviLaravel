@@ -1,6 +1,46 @@
 <script setup>
-import {Head} from "@inertiajs/vue3";
+import {Head, useForm} from "@inertiajs/vue3";
 import DefaultLayout from "../../Layouts/DefaultLayout.vue";
+
+const props = defineProps({
+    'lastArticles': Object,
+    'lastReviews': Object,
+    'errors': Object
+})
+
+function getStringUntilDot(str) {
+    const index = str.indexOf('.');
+    return index === -1 ? str : str.substring(0, index);
+}
+function truncatedDescription(description) {
+    if (description.length <= 200) return description;
+    return description.substring(0, 200) + '...';
+}
+
+const newReview = useForm({
+    "name": "",
+    "email": "",
+    "message": "",
+})
+function submitNewReview() {
+    newReview.post(route('reviews.store'), {
+        preserveState: true,
+        preserveScroll: true,
+        onSuccess: () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Плавная прокрутка (по желанию)
+            });
+            reviews.value.data = [newReview, ...reviews.value.data];
+            //location.reload();
+
+
+            //console.log(response)
+            //newReview.reset();
+        },
+    });
+}
+
 </script>
 
 <template>
@@ -237,23 +277,25 @@ import DefaultLayout from "../../Layouts/DefaultLayout.vue";
                     <br>
                     мобильных приложений в ТВЭЛВИ
                 </h3>
-                <form action="#" class="reviews__form form-reviews">
+                <form @submit.prevent="submitNewReview" action="#" class="reviews__form form-reviews">
                     <div class="form-reviews__col">
                         <div class="form-reviews__inputs">
-                            <input type="text" name="name" placeholder="Имя" class="form-reviews__input">
-                            <input type="email" name="email" placeholder="E-mail" class="form-reviews__input">
+                            <input v-model="newReview.name" :class="{ 'error': props.errors.name }" type="text" name="name" placeholder="Имя" class="form-reviews__input">
+                            <input v-model="newReview.email" :class="{ 'error': props.errors.email }" type="email" name="email" placeholder="E-mail" class="form-reviews__input">
                         </div>
                         <button type="submit" name="submit" class="reviews__button button">отправить</button>
                     </div>
                     <div class="form-reviews__col">
-                        <textarea name="text" placeholder="Текст отзыва" class="form-reviews__textarea"></textarea>
+                        <textarea v-model="newReview.message" :class="{ 'error': props.errors.message }" name="text" placeholder="Текст сообщения" class="form-reviews__textarea"></textarea>
                         <button type="submit" name="submit"
+                                :disabled="newReview.processing"
+                                :class="{ 'processing': newReview.processing }"
                                 class="reviews__button reviews__button_mobile button">отправить
                         </button>
                     </div>
                 </form>
                 <div class="reviews__items">
-                    <div class="reviews__item">
+                    <div v-for="review in lastReviews" class="reviews__item">
                         <div class="reviews__quotes ic-quotes"></div>
                         <div class="reviews__stars">
                             <div class="reviews__star ic-star"></div>
@@ -262,64 +304,8 @@ import DefaultLayout from "../../Layouts/DefaultLayout.vue";
                             <div class="reviews__star ic-star"></div>
                             <div class="reviews__star ic-star"></div>
                         </div>
-                        <h6 class="reviews__name">Александр</h6>
-                        <div class="reviews__text">Здесь автор сталкивает два таких достаточно далёких друг от друга
-                            явления как генезис свободного стиха теоретически возможен. Строфоид отражает
-                            поэтический гекзаметр. Пастиш полидисперсен. Графомания, соприкоснувшись в чем-то со
-                            своим главным антагонистом в постструктурной поэтике, откровенна.
-                            Строфоид отражает поэтический гекзаметр. Пастиш полидисперсен. Графома
-                        </div>
-                    </div>
-                    <div class="reviews__item">
-                        <div class="reviews__quotes ic-quotes"></div>
-                        <div class="reviews__stars">
-                            <div class="reviews__star ic-star"></div>
-                            <div class="reviews__star ic-star"></div>
-                            <div class="reviews__star ic-star"></div>
-                            <div class="reviews__star ic-star"></div>
-                            <div class="reviews__star ic-star"></div>
-                        </div>
-                        <h6 class="reviews__name">Александр</h6>
-                        <div class="reviews__text">Здесь автор сталкивает два таких достаточно далёких друг от друга
-                            явления как генезис свободного стиха теоретически возможен. Строфоид отражает
-                            поэтический гекзаметр. Пастиш полидисперсен. Графомания, соприкоснувшись в чем-то со
-                            своим главным антагонистом в постструктурной поэтике, откровенна.
-                            Строфоид отражает поэтический гекзаметр. Пастиш полидисперсен. Графома
-                        </div>
-                    </div>
-                    <div class="reviews__item">
-                        <div class="reviews__quotes ic-quotes"></div>
-                        <div class="reviews__stars">
-                            <div class="reviews__star ic-star"></div>
-                            <div class="reviews__star ic-star"></div>
-                            <div class="reviews__star ic-star"></div>
-                            <div class="reviews__star ic-star"></div>
-                            <div class="reviews__star ic-star"></div>
-                        </div>
-                        <h6 class="reviews__name">Александр</h6>
-                        <div class="reviews__text">Здесь автор сталкивает два таких достаточно далёких друг от друга
-                            явления как генезис свободного стиха теоретически возможен. Строфоид отражает
-                            поэтический гекзаметр. Пастиш полидисперсен. Графомания, соприкоснувшись в чем-то со
-                            своим главным антагонистом в постструктурной поэтике, откровенна.
-                            Строфоид отражает поэтический гекзаметр. Пастиш полидисперсен. Графома
-                        </div>
-                    </div>
-                    <div class="reviews__item">
-                        <div class="reviews__quotes ic-quotes"></div>
-                        <div class="reviews__stars">
-                            <div class="reviews__star ic-star"></div>
-                            <div class="reviews__star ic-star"></div>
-                            <div class="reviews__star ic-star"></div>
-                            <div class="reviews__star ic-star"></div>
-                            <div class="reviews__star ic-star"></div>
-                        </div>
-                        <h6 class="reviews__name">Александр</h6>
-                        <div class="reviews__text">Здесь автор сталкивает два таких достаточно далёких друг от друга
-                            явления как генезис свободного стиха теоретически возможен. Строфоид отражает
-                            поэтический гекзаметр. Пастиш полидисперсен. Графомания, соприкоснувшись в чем-то со
-                            своим главным антагонистом в постструктурной поэтике, откровенна.
-                            Строфоид отражает поэтический гекзаметр. Пастиш полидисперсен. Графома
-                        </div>
+                        <h6 class="reviews__name">{{review.name}}</h6>
+                        <div class="reviews__text">{{review.message}}</div>
                     </div>
                 </div>
                 <div class="reviews__bottom">
@@ -333,55 +319,19 @@ import DefaultLayout from "../../Layouts/DefaultLayout.vue";
                     <mark>о мобильной разработке</mark>
                 </h2>
                 <div class="articles__items">
-                    <article class="articles__item">
+                    <article v-for="article in lastArticles" class="articles__item">
                         <div class="articles__image">
                             <picture>
-                                <source srcset='../../../img/articles/01.webp' type='image/webp'>
-                                <img src='../../../img/articles/01.jpeg' alt='article image'>
+                                <source :srcset='getStringUntilDot(article.image) + ".webp"' type='image/webp'>
+                                <img :src='article.image' alt='article image'>
                             </picture>
                         </div>
-                        <h4 class="articles__item-title">Тренды мобильной разработки 2024 года</h4>
-                        <div class="articles__text">Изменение глобальной стратегии оправдывает типичный комплексный
-                            анализ ситуации. Перераспределение бюджета одновременно искажает коллективный фактор
-                            коммуникации.....
+                        <h4 class="articles__item-title">{{article.title}}</h4>
+                        <div class="articles__text">{{truncatedDescription(article.description)}}
                         </div>
                         <footer class="articles__footer">
-                            <div class="articles__date">20.04.24</div>
-                            <a href="article.html" class="articles__button simple-button ic-arrow-link">Читать</a>
-                        </footer>
-                    </article>
-                    <article class="articles__item">
-                        <div class="articles__image">
-                            <picture>
-                                <source srcset='../../../img/articles/02.webp' type='image/webp'>
-                                <img src='../../../img/articles/02.jpeg' alt='article image'>
-                            </picture>
-                        </div>
-                        <h4 class="articles__item-title">Как выбрать платформу для вашего приложения</h4>
-                        <div class="articles__text">Изменение глобальной стратегии оправдывает типичный комплексный
-                            анализ ситуации. Перераспределение бюджета одновременно искажает коллективный фактор
-                            коммуникации.....
-                        </div>
-                        <footer class="articles__footer">
-                            <div class="articles__date">20.04.24</div>
-                            <a href="article.html" class="articles__button simple-button ic-arrow-link">Читать</a>
-                        </footer>
-                    </article>
-                    <article class="articles__item">
-                        <div class="articles__image">
-                            <picture>
-                                <source srcset='../../../img/articles/03.webp' type='image/webp'>
-                                <img src='../../../img/articles/03.jpeg' alt='article image'>
-                            </picture>
-                        </div>
-                        <h4 class="articles__item-title">Советы по UX/UI дизайну для мобильных приложений</h4>
-                        <div class="articles__text">Изменение глобальной стратегии оправдывает типичный комплексный
-                            анализ ситуации. Перераспределение бюджета одновременно искажает коллективный фактор
-                            коммуникации.....
-                        </div>
-                        <footer class="articles__footer">
-                            <div class="articles__date">20.04.24</div>
-                            <a href="article.html" class="articles__button simple-button ic-arrow-link">Читать</a>
+                            <div class="articles__date">{{article.created_at}}</div>
+                            <a :href="route('article.show', article.id)" class="articles__button simple-button ic-arrow-link">Читать</a>
                         </footer>
                     </article>
                 </div>

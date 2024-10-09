@@ -2,6 +2,23 @@
 import {Head} from "@inertiajs/vue3";
 import DefaultLayout from "../../Layouts/DefaultLayout.vue";
 
+const props = defineProps({
+    'articles': Object
+})
+
+props.articles.links[0].label = 'Назад';
+props.articles.links[props.articles.links.length - 1].label = 'Вперед';
+
+//чтобы добавить оптимизированное изображение (убрать у текущего расширение и вывести с .webp)
+function getStringUntilDot(str) {
+    const index = str.indexOf('.');
+    return index === -1 ? str : str.substring(0, index);
+}
+function truncatedDescription(description) {
+    if (description.length <= 200) return description;
+    return description.substring(0, 200) + '...';
+}
+
 </script>
 
 <template>
@@ -16,184 +33,31 @@ import DefaultLayout from "../../Layouts/DefaultLayout.vue";
                     <mark>о мобильной разработке</mark>
                 </h2> -->
                 <div class="articles__items">
-                    <article class="articles__item">
+                    <article v-for="article in articles.data" class="articles__item">
                         <div class="articles__image">
                             <picture>
-                                <source srcset='../../../img/articles/01.webp' type='image/webp'>
-                                <img src='../../../img/articles/01.jpeg' alt='article image'>
+                                <source :srcset='getStringUntilDot(article.image) + ".webp"' type='image/webp'>
+                                <img :src='article.image' alt='article image'>
                             </picture>
                         </div>
-                        <h4 class="articles__item-title">Тренды мобильной разработки 2024 года</h4>
-                        <div class="articles__text">Изменение глобальной стратегии оправдывает типичный комплексный
-                            анализ ситуации. Перераспределение бюджета одновременно искажает коллективный фактор
-                            коммуникации.....
+                        <h4 class="articles__item-title">{{article.title}}</h4>
+                        <div class="articles__text">{{truncatedDescription(article.description)}}
                         </div>
                         <footer class="articles__footer">
-                            <div class="articles__date">20.04.24</div>
-                            <a href="article.html" class="articles__button simple-button ic-arrow-link">Читать</a>
-                        </footer>
-                    </article>
-                    <article class="articles__item">
-                        <div class="articles__image">
-                            <picture>
-                                <source srcset='../../../img/articles/02.webp' type='image/webp'>
-                                <img src='../../../img/articles/02.jpeg' alt='article image'>
-                            </picture>
-                        </div>
-                        <h4 class="articles__item-title">Как выбрать платформу для вашего приложения</h4>
-                        <div class="articles__text">Изменение глобальной стратегии оправдывает типичный комплексный
-                            анализ ситуации. Перераспределение бюджета одновременно искажает коллективный фактор
-                            коммуникации.....
-                        </div>
-                        <footer class="articles__footer">
-                            <div class="articles__date">20.04.24</div>
-                            <a href="article.html" class="articles__button simple-button  ic-arrow-link">Читать</a>
-                        </footer>
-                    </article>
-                    <article class="articles__item">
-                        <div class="articles__image">
-                            <picture>
-                                <source srcset='../../../img/articles/03.webp' type='image/webp'>
-                                <img src='../../../img/articles/03.jpeg' alt='article image'>
-                            </picture>
-                        </div>
-                        <h4 class="articles__item-title">Советы по UX/UI дизайну для мобильных приложений</h4>
-                        <div class="articles__text">Изменение глобальной стратегии оправдывает типичный комплексный
-                            анализ ситуации. Перераспределение бюджета одновременно искажает коллективный фактор
-                            коммуникации.....
-                        </div>
-                        <footer class="articles__footer">
-                            <div class="articles__date">20.04.24</div>
-                            <a href="article.html" class="articles__button simple-button  ic-arrow-link">Читать</a>
-                        </footer>
-                    </article>
-                    <article class="articles__item">
-                        <div class="articles__image">
-                            <picture>
-                                <source srcset='../../../img/articles/01.webp' type='image/webp'>
-                                <img src='../../../img/articles/01.jpeg' alt='article image'>
-                            </picture>
-                        </div>
-                        <h4 class="articles__item-title">Тренды мобильной разработки 2024 года</h4>
-                        <div class="articles__text">Изменение глобальной стратегии оправдывает типичный комплексный
-                            анализ ситуации. Перераспределение бюджета одновременно искажает коллективный фактор
-                            коммуникации.....
-                        </div>
-                        <footer class="articles__footer">
-                            <div class="articles__date">20.04.24</div>
-                            <a href="article.html" class="articles__button simple-button ic-arrow-link">Читать</a>
-                        </footer>
-                    </article>
-                    <article class="articles__item">
-                        <div class="articles__image">
-                            <picture>
-                                <source srcset='../../../img/articles/02.webp' type='image/webp'>
-                                <img src='../../../img/articles/02.jpeg' alt='article image'>
-                            </picture>
-                        </div>
-                        <h4 class="articles__item-title">Как выбрать платформу для вашего приложения</h4>
-                        <div class="articles__text">Изменение глобальной стратегии оправдывает типичный комплексный
-                            анализ ситуации. Перераспределение бюджета одновременно искажает коллективный фактор
-                            коммуникации.....
-                        </div>
-                        <footer class="articles__footer">
-                            <div class="articles__date">20.04.24</div>
-                            <a href="article.html" class="articles__button simple-button  ic-arrow-link">Читать</a>
-                        </footer>
-                    </article>
-                    <article class="articles__item">
-                        <div class="articles__image">
-                            <picture>
-                                <source srcset='../../../img/articles/03.webp' type='image/webp'>
-                                <img src='../../../img/articles/03.jpeg' alt='article image'>
-                            </picture>
-                        </div>
-                        <h4 class="articles__item-title">Советы по UX/UI дизайну для мобильных приложений</h4>
-                        <div class="articles__text">Изменение глобальной стратегии оправдывает типичный комплексный
-                            анализ ситуации. Перераспределение бюджета одновременно искажает коллективный фактор
-                            коммуникации.....
-                        </div>
-                        <footer class="articles__footer">
-                            <div class="articles__date">20.04.24</div>
-                            <a href="article.html" class="articles__button simple-button  ic-arrow-link">Читать</a>
-                        </footer>
-                    </article>
-                    <article class="articles__item">
-                        <div class="articles__image">
-                            <picture>
-                                <source srcset='../../../img/articles/01.webp' type='image/webp'>
-                                <img src='../../../img/articles/01.jpeg' alt='article image'>
-                            </picture>
-                        </div>
-                        <h4 class="articles__item-title">Тренды мобильной разработки 2024 года</h4>
-                        <div class="articles__text">Изменение глобальной стратегии оправдывает типичный комплексный
-                            анализ ситуации. Перераспределение бюджета одновременно искажает коллективный фактор
-                            коммуникации.....
-                        </div>
-                        <footer class="articles__footer">
-                            <div class="articles__date">20.04.24</div>
-                            <a href="article.html" class="articles__button simple-button ic-arrow-link">Читать</a>
-                        </footer>
-                    </article>
-                    <article class="articles__item">
-                        <div class="articles__image">
-                            <picture>
-                                <source srcset='../../../img/articles/02.webp' type='image/webp'>
-                                <img src='../../../img/articles/02.jpeg' alt='article image'>
-                            </picture>
-                        </div>
-                        <h4 class="articles__item-title">Как выбрать платформу для вашего приложения</h4>
-                        <div class="articles__text">Изменение глобальной стратегии оправдывает типичный комплексный
-                            анализ ситуации. Перераспределение бюджета одновременно искажает коллективный фактор
-                            коммуникации.....
-                        </div>
-                        <footer class="articles__footer">
-                            <div class="articles__date">20.04.24</div>
-                            <a href="article.html" class="articles__button simple-button  ic-arrow-link">Читать</a>
-                        </footer>
-                    </article>
-                    <article class="articles__item">
-                        <div class="articles__image">
-                            <picture>
-                                <source srcset='../../../img/articles/03.webp' type='image/webp'>
-                                <img src='../../../img/articles/03.jpeg' alt='article image'>
-                            </picture>
-                        </div>
-                        <h4 class="articles__item-title">Советы по UX/UI дизайну для мобильных приложений</h4>
-                        <div class="articles__text">Изменение глобальной стратегии оправдывает типичный комплексный
-                            анализ ситуации. Перераспределение бюджета одновременно искажает коллективный фактор
-                            коммуникации.....
-                        </div>
-                        <footer class="articles__footer">
-                            <div class="articles__date">20.04.24</div>
-                            <a href="article.html" class="articles__button simple-button  ic-arrow-link">Читать</a>
+                            <div class="articles__date">{{article.created_at}}</div>
+                            <a :href="route('article.show', article.id)" class="articles__button simple-button ic-arrow-link">Читать</a>
                         </footer>
                     </article>
                 </div>
                 <ul class="articles-pagination pagination">
-                    <!-- <li class="pagination__item pagination__item_button">
-                        <a href="" class="pagination__link">Назад</a>
-                    </li> -->
-                    <li class="pagination__item pagination__item_active">
-                        <a href="" class="pagination__link">1</a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="" class="pagination__link">2</a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="" class="pagination__link">3</a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="" class="pagination__link">4</a>
-                    </li>
-                    <li class="pagination__item pagination__item_unactive">
-                        <a href="" class="pagination__link">...</a>
-                    </li>
-                    <li class="pagination__item">
-                        <a href="" class="pagination__link">22</a>
-                    </li>
-                    <li class="pagination__item pagination__item_button pagination__item_button_forward">
-                        <a href="" class="pagination__link ic-arrow">Дальше</a>
+                    <li class="pagination__item"
+                        v-if="articles.links.length > 3" v-for="link in articles.links"
+                        :class="{ 'pagination__item_active': link.active,'pagination__item_button': link.label === 'Назад' || link.label === 'Вперед'}">
+                        <a class="pagination__link" :href="link.url"
+                           :class="{ 'active': link.active, 'pagination__item_unactive': !link.url && !link.active,
+                            }">
+                            {{link.label}}
+                        </a>
                     </li>
                 </ul>
             </div>
