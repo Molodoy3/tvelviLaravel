@@ -11,7 +11,7 @@ props.articles.links[props.articles.links.length - 1].label = 'Вперед';
 
 //чтобы добавить оптимизированное изображение (убрать у текущего расширение и вывести с .webp)
 function getStringUntilDot(str) {
-    const index = str.indexOf('.');
+    const index = str.lastIndexOf('.');
     return index === -1 ? str : str.substring(0, index);
 }
 function truncatedDescription(description) {
