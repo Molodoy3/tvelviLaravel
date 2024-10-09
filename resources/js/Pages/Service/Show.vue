@@ -9,7 +9,7 @@ const props = defineProps({
 
 //чтобы добавить оптимизированное изображение (убрать у текущего расширение и вывести с .webp)
 function getStringUntilDot(str) {
-    const index = str.indexOf('.');
+    const index = str.lastIndexOf('.');
     return index === -1 ? str : str.substring(0, index);
 }
 //для того чтобы убрать теги (mark для заголовка)

@@ -7,7 +7,7 @@ defineProps({
     'article': Object
 })
 function getStringUntilDot(str) {
-    const index = str.indexOf('.');
+    const index = str.lastIndexOf('.');
     return index === -1 ? str : str.substring(0, index);
 }
 
