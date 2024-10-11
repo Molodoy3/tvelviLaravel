@@ -227,7 +227,7 @@ mark {
 
     &__content {
 
-        flex: 0 0 perc(530, 1330);
+        flex: 0 0 perc(630, 1330);
 
         @media (min-width: $md3) {
             padding-bottom: rem(50);
@@ -280,7 +280,7 @@ mark {
         }
 
         img {
-            width: 100%;
+            max-width: 100%;
         }
     }
 }
@@ -1543,7 +1543,9 @@ mark {
 
             padding-top: rem(32);
         }
-
+        &:last-child{
+            padding-bottom: 40px;
+        }
         &:first-child {
             position: relative;
             z-index: 3;

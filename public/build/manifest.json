@@ -1,6 +1,6 @@
 {
   "resources/css/app.scss": {
-    "file": "assets/app-DkbZpykf.css",
+    "file": "assets/app-DMwL6IOs.css",
     "src": "resources/css/app.scss",
     "isEntry": true
   },
@@ -45,59 +45,59 @@
     "src": "resources/img/about-page/honor.webp"
   },
   "resources/img/about-page/honors.jpeg": {
-    "file": "assets/honors-B_FhHfGS.jpeg",
+    "file": "assets/honors-vw1AHZtn.jpeg",
     "src": "resources/img/about-page/honors.jpeg"
   },
   "resources/img/about-page/honors.webp": {
-    "file": "assets/honors-DDc-6wvM.webp",
+    "file": "assets/honors-CSiIYkcP.webp",
     "src": "resources/img/about-page/honors.webp"
   },
   "resources/img/about-page/welcome/01.jpeg": {
-    "file": "assets/01-BICK7mQa.jpeg",
+    "file": "assets/01-Dl-_PhMw.jpeg",
     "src": "resources/img/about-page/welcome/01.jpeg"
   },
   "resources/img/about-page/welcome/01.webp": {
-    "file": "assets/01-Dk0URHSf.webp",
+    "file": "assets/01-Bl3IrQJB.webp",
     "src": "resources/img/about-page/welcome/01.webp"
   },
   "resources/img/about-page/welcome/02.jpeg": {
-    "file": "assets/02-DXp3uByO.jpeg",
+    "file": "assets/02-Cz5AiFN-.jpeg",
     "src": "resources/img/about-page/welcome/02.jpeg"
   },
   "resources/img/about-page/welcome/02.webp": {
-    "file": "assets/02-Bl627OjR.webp",
+    "file": "assets/02-B9q5N54v.webp",
     "src": "resources/img/about-page/welcome/02.webp"
   },
   "resources/img/about-page/welcome/03.jpeg": {
-    "file": "assets/03-ChV4UHVI.jpeg",
+    "file": "assets/03-cNrVsjVq.jpeg",
     "src": "resources/img/about-page/welcome/03.jpeg"
   },
   "resources/img/about-page/welcome/03.webp": {
-    "file": "assets/03-CXtevpYB.webp",
+    "file": "assets/03-BxsRC7NE.webp",
     "src": "resources/img/about-page/welcome/03.webp"
   },
   "resources/img/about/01.jpeg": {
-    "file": "assets/01-Dl8Ik66B.jpeg",
+    "file": "assets/01-BbvEFvCu.jpeg",
     "src": "resources/img/about/01.jpeg"
   },
   "resources/img/about/01.webp": {
-    "file": "assets/01-BJS_T85U.webp",
+    "file": "assets/01-BQ-TkjIb.webp",
     "src": "resources/img/about/01.webp"
   },
   "resources/img/about/02.jpeg": {
-    "file": "assets/02-DyE0Axwq.jpeg",
+    "file": "assets/02-DJTtgbCL.jpeg",
     "src": "resources/img/about/02.jpeg"
   },
   "resources/img/about/02.webp": {
-    "file": "assets/02-BEllYbQz.webp",
+    "file": "assets/02-CI_VVqHn.webp",
     "src": "resources/img/about/02.webp"
   },
   "resources/img/about/03.jpeg": {
-    "file": "assets/03-Di2Tz1Dx.jpeg",
+    "file": "assets/03-DvqO4zgZ.jpeg",
     "src": "resources/img/about/03.jpeg"
   },
   "resources/img/about/03.webp": {
-    "file": "assets/03-BqaSZZdS.webp",
+    "file": "assets/03-DACRpW1z.webp",
     "src": "resources/img/about/03.webp"
   },
   "resources/img/contact-window/close.png": {
@@ -133,11 +133,11 @@
     "src": "resources/img/contact-window/watsapp.webp"
   },
   "resources/img/contacts/person.jpeg": {
-    "file": "assets/person-BPqlTaCa.jpeg",
+    "file": "assets/person-B-bmrdfg.jpeg",
     "src": "resources/img/contacts/person.jpeg"
   },
   "resources/img/contacts/person.webp": {
-    "file": "assets/person-DfjUEndR.webp",
+    "file": "assets/person-Dox4KA6e.webp",
     "src": "resources/img/contacts/person.webp"
   },
   "resources/img/logo.svg": {
@@ -153,15 +153,15 @@
     "src": "resources/img/main-block/background.webp"
   },
   "resources/img/main-block/telephones.png": {
-    "file": "assets/telephones-ClDWULIy.png",
+    "file": "assets/telephones-CWv6t8G7.png",
     "src": "resources/img/main-block/telephones.png"
   },
   "resources/img/main-block/telephones.webp": {
-    "file": "assets/telephones-Cr9W3X6N.webp",
+    "file": "assets/telephones-CfDAKSy-.webp",
     "src": "resources/img/main-block/telephones.webp"
   },
   "resources/img/portfolio/01.png": {
-    "file": "assets/01-C9xAB7JI.png",
+    "file": "assets/01-oelVitXJ.png",
     "src": "resources/img/portfolio/01.png"
   },
   "resources/img/portfolio/01.webp": {
@@ -169,19 +169,19 @@
     "src": "resources/img/portfolio/01.webp"
   },
   "resources/img/portfolio/03.png": {
-    "file": "assets/03-BJW-2YS8.png",
+    "file": "assets/03-BSv90--g.png",
     "src": "resources/img/portfolio/03.png"
   },
   "resources/img/portfolio/03.webp": {
-    "file": "assets/03-ssGLxwnP.webp",
+    "file": "assets/03-CKp71wiF.webp",
     "src": "resources/img/portfolio/03.webp"
   },
   "resources/img/portfolio/44.jpeg": {
-    "file": "assets/44-C5IvsWwn.jpeg",
+    "file": "assets/44-CS1QHQHJ.jpeg",
     "src": "resources/img/portfolio/44.jpeg"
   },
   "resources/img/portfolio/44.webp": {
-    "file": "assets/44-CbkgPMcD.webp",
+    "file": "assets/44-DMBNGgTj.webp",
     "src": "resources/img/portfolio/44.webp"
   },
   "resources/img/portfolio/backgound-01.jpeg": {
@@ -201,51 +201,51 @@
     "src": "resources/img/portfolio/backgound-mobile-speak.webp"
   },
   "resources/img/projects/01.png": {
-    "file": "assets/01-DOJ17FLU.png",
+    "file": "assets/01-CuD1JA8x.png",
     "src": "resources/img/projects/01.png"
   },
   "resources/img/projects/01.webp": {
-    "file": "assets/01-BE-alX_y.webp",
+    "file": "assets/01-BAgtzhZJ.webp",
     "src": "resources/img/projects/01.webp"
   },
   "resources/img/projects/02.png": {
-    "file": "assets/02-DNg8oSOj.png",
+    "file": "assets/02-D0TnXWu7.png",
     "src": "resources/img/projects/02.png"
   },
   "resources/img/projects/02.webp": {
-    "file": "assets/02-B25LDwRm.webp",
+    "file": "assets/02-JKr-KMX9.webp",
     "src": "resources/img/projects/02.webp"
   },
   "resources/img/projects/03.png": {
-    "file": "assets/03-BpYx486t.png",
+    "file": "assets/03-DCWTdW4k.png",
     "src": "resources/img/projects/03.png"
   },
   "resources/img/projects/03.webp": {
-    "file": "assets/03-Fink21TZ.webp",
+    "file": "assets/03-qWvibreb.webp",
     "src": "resources/img/projects/03.webp"
   },
   "resources/img/projects/04.png": {
-    "file": "assets/04-BlGTJVLI.png",
+    "file": "assets/04-DDxUmx3w.png",
     "src": "resources/img/projects/04.png"
   },
   "resources/img/projects/04.webp": {
-    "file": "assets/04-B_yQowxu.webp",
+    "file": "assets/04-n0W6L5ZS.webp",
     "src": "resources/img/projects/04.webp"
   },
   "resources/img/projects/05.png": {
-    "file": "assets/05-CpOJhaM9.png",
+    "file": "assets/05-UIo4iiVM.png",
     "src": "resources/img/projects/05.png"
   },
   "resources/img/projects/05.webp": {
-    "file": "assets/05-CgqEerLd.webp",
+    "file": "assets/05-D8q_k2T6.webp",
     "src": "resources/img/projects/05.webp"
   },
   "resources/img/projects/06.png": {
-    "file": "assets/06-D19LBOWB.png",
+    "file": "assets/06-B56pcp3a.png",
     "src": "resources/img/projects/06.png"
   },
   "resources/img/projects/06.webp": {
-    "file": "assets/06-BCL29ZFP.webp",
+    "file": "assets/06-ChEiuV7b.webp",
     "src": "resources/img/projects/06.webp"
   },
   "resources/img/reviews/background.png": {
@@ -269,35 +269,35 @@
     "src": "resources/img/services/ready/ready.svg"
   },
   "resources/img/special-offers/01.jpeg": {
-    "file": "assets/01-B3tR8k5d.jpeg",
+    "file": "assets/01-BgJUcKMa.jpeg",
     "src": "resources/img/special-offers/01.jpeg"
   },
   "resources/img/special-offers/01.webp": {
-    "file": "assets/01-DIfN_T_O.webp",
+    "file": "assets/01-0xgOzGvl.webp",
     "src": "resources/img/special-offers/01.webp"
   },
   "resources/img/special-offers/02.jpeg": {
-    "file": "assets/02-Br_kL8kp.jpeg",
+    "file": "assets/02-CMQCgQ9w.jpeg",
     "src": "resources/img/special-offers/02.jpeg"
   },
   "resources/img/special-offers/02.webp": {
-    "file": "assets/02-Bl51VIBN.webp",
+    "file": "assets/02-BEvF-iRl.webp",
     "src": "resources/img/special-offers/02.webp"
   },
   "resources/img/special-offers/03.jpeg": {
-    "file": "assets/03-CCfWtJaF.jpeg",
+    "file": "assets/03-7xNtR3C4.jpeg",
     "src": "resources/img/special-offers/03.jpeg"
   },
   "resources/img/special-offers/03.webp": {
-    "file": "assets/03-yzHlhzxb.webp",
+    "file": "assets/03-Hzg08Mtp.webp",
     "src": "resources/img/special-offers/03.webp"
   },
   "resources/img/special-offers/04.jpeg": {
-    "file": "assets/04-fCE6WaZZ.jpeg",
+    "file": "assets/04-9DyBKiNH.jpeg",
     "src": "resources/img/special-offers/04.jpeg"
   },
   "resources/img/special-offers/04.webp": {
-    "file": "assets/04-6RShKo8P.webp",
+    "file": "assets/04-0nHxzkO0.webp",
     "src": "resources/img/special-offers/04.webp"
   },
   "resources/img/special-offers/background.png": {
@@ -309,7 +309,7 @@
     "src": "resources/img/special-offers/background.webp"
   },
   "resources/js/app.js": {
-    "file": "assets/app-Bps9lZAC.js",
+    "file": "assets/app-BPxcZviW.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -323,68 +323,68 @@
       "assets/tg-EkgJAspj.webp",
       "assets/tg-C4OdD94L.png",
       "assets/logo-C5b5UPJR.svg",
-      "assets/01-Dk0URHSf.webp",
-      "assets/01-BICK7mQa.jpeg",
-      "assets/02-Bl627OjR.webp",
-      "assets/02-DXp3uByO.jpeg",
-      "assets/03-CXtevpYB.webp",
-      "assets/03-ChV4UHVI.jpeg",
+      "assets/01-Bl3IrQJB.webp",
+      "assets/01-Dl-_PhMw.jpeg",
+      "assets/02-B9q5N54v.webp",
+      "assets/02-Cz5AiFN-.jpeg",
+      "assets/03-BxsRC7NE.webp",
+      "assets/03-cNrVsjVq.jpeg",
       "assets/raifaizen-D_zqEeWQ.webp",
       "assets/raifaizen-BEJmh3rs.png",
       "assets/lukoil-B0SuYgRX.webp",
       "assets/lukoil-HyYvoM2U.png",
       "assets/honor-DIj8CeQW.webp",
       "assets/honor-lbDO9Ppc.png",
-      "assets/honors-DDc-6wvM.webp",
-      "assets/honors-B_FhHfGS.jpeg",
-      "assets/person-DfjUEndR.webp",
-      "assets/person-BPqlTaCa.jpeg",
+      "assets/honors-CSiIYkcP.webp",
+      "assets/honors-vw1AHZtn.jpeg",
+      "assets/person-Dox4KA6e.webp",
+      "assets/person-B-bmrdfg.jpeg",
       "assets/background-D-_MFx9t.webp",
       "assets/background-B5LxNRYs.png",
-      "assets/telephones-Cr9W3X6N.webp",
-      "assets/telephones-ClDWULIy.png",
+      "assets/telephones-CfDAKSy-.webp",
+      "assets/telephones-CWv6t8G7.png",
       "assets/background-8P8AnTfe.webp",
       "assets/background-XwIS6qQi.png",
-      "assets/01-DIfN_T_O.webp",
-      "assets/01-B3tR8k5d.jpeg",
-      "assets/02-Bl51VIBN.webp",
-      "assets/02-Br_kL8kp.jpeg",
-      "assets/03-yzHlhzxb.webp",
-      "assets/03-CCfWtJaF.jpeg",
-      "assets/04-6RShKo8P.webp",
-      "assets/04-fCE6WaZZ.jpeg",
-      "assets/01-BE-alX_y.webp",
-      "assets/01-DOJ17FLU.png",
-      "assets/02-B25LDwRm.webp",
-      "assets/02-DNg8oSOj.png",
-      "assets/03-Fink21TZ.webp",
-      "assets/03-BpYx486t.png",
-      "assets/04-B_yQowxu.webp",
-      "assets/04-BlGTJVLI.png",
-      "assets/05-CgqEerLd.webp",
-      "assets/05-CpOJhaM9.png",
-      "assets/06-BCL29ZFP.webp",
-      "assets/06-D19LBOWB.png",
+      "assets/01-0xgOzGvl.webp",
+      "assets/01-BgJUcKMa.jpeg",
+      "assets/02-BEvF-iRl.webp",
+      "assets/02-CMQCgQ9w.jpeg",
+      "assets/03-Hzg08Mtp.webp",
+      "assets/03-7xNtR3C4.jpeg",
+      "assets/04-0nHxzkO0.webp",
+      "assets/04-9DyBKiNH.jpeg",
+      "assets/01-BAgtzhZJ.webp",
+      "assets/01-CuD1JA8x.png",
+      "assets/02-JKr-KMX9.webp",
+      "assets/02-D0TnXWu7.png",
+      "assets/03-qWvibreb.webp",
+      "assets/03-DCWTdW4k.png",
+      "assets/04-n0W6L5ZS.webp",
+      "assets/04-DDxUmx3w.png",
+      "assets/05-D8q_k2T6.webp",
+      "assets/05-UIo4iiVM.png",
+      "assets/06-ChEiuV7b.webp",
+      "assets/06-B56pcp3a.png",
       "assets/background-DisGsjgU.webp",
       "assets/background-BgZGx_I8.png",
-      "assets/01-BJS_T85U.webp",
-      "assets/01-Dl8Ik66B.jpeg",
-      "assets/02-BEllYbQz.webp",
-      "assets/02-DyE0Axwq.jpeg",
-      "assets/03-BqaSZZdS.webp",
-      "assets/03-Di2Tz1Dx.jpeg",
+      "assets/01-BQ-TkjIb.webp",
+      "assets/01-BbvEFvCu.jpeg",
+      "assets/02-CI_VVqHn.webp",
+      "assets/02-DJTtgbCL.jpeg",
+      "assets/03-DACRpW1z.webp",
+      "assets/03-DvqO4zgZ.jpeg",
       "assets/background-3b1zRALm.webp",
       "assets/background-CttqKZDJ.png",
       "assets/backgound-01-B1tlWBon.webp",
       "assets/backgound-01-BLZ5dEQi.jpeg",
       "assets/01-DRuv5S1Q.webp",
-      "assets/01-C9xAB7JI.png",
-      "assets/44-CbkgPMcD.webp",
-      "assets/44-C5IvsWwn.jpeg",
+      "assets/01-oelVitXJ.png",
+      "assets/44-DMBNGgTj.webp",
+      "assets/44-CS1QHQHJ.jpeg",
       "assets/backgound-mobile-speak-C1EZ2GGL.webp",
       "assets/backgound-mobile-speak-Kvobl6Ru.jpeg",
-      "assets/03-ssGLxwnP.webp",
-      "assets/03-BJW-2YS8.png",
+      "assets/03-CKp71wiF.webp",
+      "assets/03-BSv90--g.png",
       "assets/ready-Diz233EA.svg"
     ]
   }
