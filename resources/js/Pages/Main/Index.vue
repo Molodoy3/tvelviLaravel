@@ -2,6 +2,7 @@
 import {Head, useForm} from "@inertiajs/vue3";
 import DefaultLayout from "../../Layouts/DefaultLayout.vue";
 import AboutSection from "../../Components/About-section.vue";
+import ConnectSection from "../../Components/ConnectSection.vue";
 
 const props = defineProps({
     'lastArticles': Object,
@@ -13,6 +14,7 @@ function getStringUntilDot(str) {
     const index = str.lastIndexOf('.');
     return index === -1 ? str : str.substring(0, index);
 }
+
 function truncatedDescription(description) {
     if (description.length <= 200) return description;
     return description.substring(0, 200) + '...';
@@ -23,6 +25,7 @@ const newReview = useForm({
     "email": "",
     "message": "",
 })
+
 function submitNewReview() {
     newReview.post(route('reviews.store'), {
         preserveState: true,
@@ -63,7 +66,9 @@ function submitNewReview() {
                     </h1>
                     <div class="main-block__text">Создадим ваше приложение быстро, качественно и по доступной цене.
                     </div>
-                    <button type="button" data-button-for-open-custom-popup="application" class="main-block__button button">Заказать разработку</button>
+                    <button type="button" data-button-for-open-custom-popup="application"
+                            class="main-block__button button">Заказать разработку
+                    </button>
                 </div>
                 <div class="main-block__image">
                     <picture>
@@ -119,7 +124,8 @@ function submitNewReview() {
         <section id="offers" class="special-offers">
             <picture>
                 <source srcset='../../../img/special-offers/background.webp' type='image/webp'>
-                <img class="special-offers__background" src='../../../img/special-offers/background.png' alt='background'>
+                <img class="special-offers__background" src='../../../img/special-offers/background.png'
+                     alt='background'>
             </picture>
             <div class='special-offers__container'>
                 <h3 class="special-offers__title title">Специальные
@@ -281,13 +287,16 @@ function submitNewReview() {
                 <form @submit.prevent="submitNewReview" action="#" class="reviews__form form-reviews">
                     <div class="form-reviews__col">
                         <div class="form-reviews__inputs">
-                            <input v-model="newReview.name" :class="{ 'error': props.errors.name }" type="text" name="name" placeholder="Имя" class="form-reviews__input">
-                            <input v-model="newReview.email" :class="{ 'error': props.errors.email }" type="email" name="email" placeholder="E-mail" class="form-reviews__input">
+                            <input v-model="newReview.name" :class="{ 'error': props.errors.name }" type="text"
+                                   name="name" placeholder="Имя" class="form-reviews__input">
+                            <input v-model="newReview.email" :class="{ 'error': props.errors.email }" type="email"
+                                   name="email" placeholder="E-mail" class="form-reviews__input">
                         </div>
                         <button type="submit" name="submit" class="reviews__button button">отправить</button>
                     </div>
                     <div class="form-reviews__col">
-                        <textarea v-model="newReview.message" :class="{ 'error': props.errors.message }" name="text" placeholder="Текст сообщения" class="form-reviews__textarea"></textarea>
+                        <textarea v-model="newReview.message" :class="{ 'error': props.errors.message }" name="text"
+                                  placeholder="Текст сообщения" class="form-reviews__textarea"></textarea>
                         <button type="submit" name="submit"
                                 :disabled="newReview.processing"
                                 :class="{ 'processing': newReview.processing }"
@@ -305,8 +314,8 @@ function submitNewReview() {
                             <div class="reviews__star ic-star"></div>
                             <div class="reviews__star ic-star"></div>
                         </div>
-                        <h6 class="reviews__name">{{review.name}}</h6>
-                        <div class="reviews__text">{{review.message}}</div>
+                        <h6 class="reviews__name">{{ review.name }}</h6>
+                        <div class="reviews__text">{{ review.message }}</div>
                     </div>
                 </div>
                 <div class="reviews__bottom">
@@ -327,12 +336,13 @@ function submitNewReview() {
                                 <img :src='article.image' alt='article image'>
                             </picture>
                         </div>
-                        <h4 class="articles__item-title">{{article.title}}</h4>
-                        <div class="articles__text">{{truncatedDescription(article.description)}}
+                        <h4 class="articles__item-title">{{ article.title }}</h4>
+                        <div class="articles__text">{{ truncatedDescription(article.description) }}
                         </div>
                         <footer class="articles__footer">
-                            <div class="articles__date">{{article.created_at}}</div>
-                            <a :href="route('article.show', article.id)" class="articles__button simple-button ic-arrow-link">Читать</a>
+                            <div class="articles__date">{{ article.created_at }}</div>
+                            <a :href="route('article.show', article.id)"
+                               class="articles__button simple-button ic-arrow-link">Читать</a>
                         </footer>
                     </article>
                 </div>
@@ -342,60 +352,7 @@ function submitNewReview() {
             </div>
         </section>
         <about-section/>
-        <section id="connect" class="connect">
-            <div class='connect__container'>
-                <div class="connect__window window-connect">
-                    <h3 class="window-connect__title title">Свяжитесь с нами</h3>
-                    <div class="window-connect__items">
-                        <div class="window-connect__info">
-                            <div class="window-connect__value">Адрес:</div>
-                            <div class="window-connect__text">Г. Казань., ул.Пушкина, 12</div>
-                        </div>
-                        <div class="window-connect__info">
-                            <div class="window-connect__value">График работы:</div>
-                            <div class="window-connect__text">Пн-пт 9:00-18:00<br>Сб-вс выходной</div>
-                        </div>
-                        <div class="window-connect__info">
-                            <div class="window-connect__value">Телефон:</div>
-                            <div class="window-connect__text"><a href="tel:+79625641112">+7 (962) 564 11 12</a></div>
-                        </div>
-                        <div class="window-connect__info">
-                            <div class="window-connect__value">Почта:</div>
-                            <div class="window-connect__text"><a href="mailto:tvelvi.it@yandex.ru">tvelvi.it@yandex.ru</a>
-                            </div>
-                        </div>
-                    </div>
-                    <form action="#" class="window-connect__form">
-                        <h4 class="window-connect__form-title">Оставьте заявку</h4>
-                        <div class="window-connect__inputs">
-                            <input type="text" name="name" placeholder="Имя" class="window-connect__input">
-                            <input type="tel" name="tel" placeholder="Телефон" class="window-connect__input">
-                        </div>
-                        <textarea name="message" placeholder="Сообщение"
-                                  class="window-connect__textarea"></textarea>
-                        <div class="window-connect__form-bottom">
-                            <button class="window-connect__buttom simple-button" type="submit"
-                                    name="submit">Отправить
-                            </button>
-                            <div class="window-connect__personal-text">Нажимая на кнопку, вы даете свое согласие на
-                                 <a :href="route('privacyAgreement')">обработку персональных данных</a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="connect__map" style="position:relative;overflow:hidden;"><!-- <a
-                        href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
-                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
-                        href="https://yandex.ru/maps/geo/ulitsa_pavla_andreyeva_7_podyezd_1/2092134474/?ll=37.639295%2C55.717424&utm_medium=mapframe&utm_source=maps&z=14.51"
-                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Павла Андреева, 7, подъезд 1
-                        — Яндекс Карты</a> -->
-                <iframe
-                    src="https://yandex.ru/map-widget/v1/?ll=37.639295%2C55.717424&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjY4ODI5MhJX0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINGD0LvQuNGG0LAg0J_QsNCy0LvQsCDQkNC90LTRgNC10LXQstCwLCA3LCDQv9C-0LTRitC10LfQtCAxIgoNgH8WQhXa4V5CMMrgzeUH&z=14.51"
-                    frameborder="1" allowfullscreen="true"
-                    style="position:relative;"></iframe>
-            </div>
-        </section>
+        <connect-section/>
     </DefaultLayout>
 </template>
 
