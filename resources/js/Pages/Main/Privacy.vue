@@ -12,7 +12,7 @@ import {Head} from "@inertiajs/vue3";
     <DefaultLayout>
         <section class="agreements">
             <div class='agreements__container'>
-                <h1 class="agreements__title title" style="max-width: 1116px;">Политика обработки <mark>персональных
+                <h1 class="agreements__title title">Политика обработки <mark>персональных
                     данных и файлов Cookie</mark> </h1>
                     <ol class="agreements__list">
                     <span class="agreements__title-list">Термины и их определения</span>
