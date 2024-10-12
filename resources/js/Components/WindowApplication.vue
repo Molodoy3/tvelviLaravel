@@ -38,8 +38,10 @@ function submit() {
             <div class="window-application__content" data-custom-popup-content>
                 <button type="button" class="window-application__close" data-close-for-custom-popup><img
                     src='../../img/icons/close.svg' alt='close'></button>
-                <h3 class="window-application__title">Оставьте заявку и получите оценку и консультацию вашего
-                    проекта</h3>
+                <h3 class="window-application__title">Оставьте заявку —
+                    получите персональное
+                    предложение и консультацию
+                    по вашему проекту!</h3>
                 <form @submit.prevent="submit" name="application" action="#" method="POST"
                       class="window-application__form">
                     <div class="window-application__inputs">
@@ -56,7 +58,7 @@ function submit() {
                     <button
                         :disabled="application.processing"
                         :class="{ 'processing': application.processing }"
-                        class="window-application__button button" type="submit">Обсудить проект
+                        class="window-application__button button" type="submit">Получить предложение
                     </button>
                     <div class="application__sub-text">Обычно перезваниваем в течение 7 минут</div>
                 </form>
