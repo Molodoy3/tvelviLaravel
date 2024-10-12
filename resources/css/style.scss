@@ -2727,7 +2727,7 @@ mark {
                 display: none;
             }
         }
-        @include adaptiv-value('margin-bottom', 40, 20, 1);
+        //@include adaptiv-value('margin-bottom', 40, 20, 1);
     }
     a {
         color: var(--red);
