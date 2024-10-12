@@ -542,10 +542,6 @@ mark {
     &__bottom {
         margin-top: rem(50);
         text-align: center;
-
-        @media (max-width: $md4) {
-            display: none;
-        }
     }
 
     &__button-more {}

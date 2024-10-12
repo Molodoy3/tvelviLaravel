@@ -11,11 +11,11 @@
                 </a>
                 <nav class="footer__menu">
                     <ul class="footer__list">
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="">Услуги</a></li>
-                        <li><a href="">О нас</a></li>
-                        <li><a href="">Портфолио</a></li>
-                        <li><a href="">Контакты</a></li>
+                        <li><a :href="route('index')">Главная</a></li>
+                        <li><a :href="route('about')">О нас</a></li>
+                        <li><a :href="route('portfolio')">Портфолио</a></li>
+                        <li><a :href="route('reviews')">Отзывы</a></li>
+                        <li><a :href="route('contacts')">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="footer__links">
