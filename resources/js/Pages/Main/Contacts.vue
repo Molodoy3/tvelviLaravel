@@ -28,7 +28,7 @@ import DefaultLayout from "../../Layouts/DefaultLayout.vue";
                                 class="reviews__button reviews__button_mobile button">отправить
                         </button>
                     </div>
-                    <div class="form-reviews__col">
+<!--                    <div class="form-reviews__col">
                         <div class="form-reviews__person person-form">
                             <div class="person-form__header">
                                 <div class="person-form__image">
@@ -47,7 +47,7 @@ import DefaultLayout from "../../Layouts/DefaultLayout.vue";
                                 Изменение глобальной стратегии оправдывает типичный комплексный анализ ситуации.
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </form>
             </div>
         </section>

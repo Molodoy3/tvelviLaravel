@@ -1,6 +1,7 @@
 <script setup>
 import {Head, useForm} from "@inertiajs/vue3";
 import DefaultLayout from "../../Layouts/DefaultLayout.vue";
+import AboutSection from "../../Components/About-section.vue";
 
 const props = defineProps({
     'lastArticles': Object,
@@ -62,7 +63,7 @@ function submitNewReview() {
                     </h1>
                     <div class="main-block__text">Создадим ваше приложение быстро, качественно и по доступной цене.
                     </div>
-                    <a href="contacts.html" class="main-block__button button">Заказать разработку</a>
+                    <button type="button" data-button-for-open-custom-popup="application" class="main-block__button button">Заказать разработку</button>
                 </div>
                 <div class="main-block__image">
                     <picture>
@@ -340,62 +341,7 @@ function submitNewReview() {
                 </div>
             </div>
         </section>
-        <section id="about" class="about">
-            <div class='about__container'>
-                <div class="about__col">
-                    <h2 class="about__title title">
-                        <mark>О нас</mark>
-                    </h2>
-                    <div class="about__text">Двойной интеграл продуцирует детерминант. Линейное уравнение
-                        стабилизирует метод последовательных приближений. Начало координат транслирует сходящийся
-                        ряд. Неравенство Бернулли соответствует анормальный интеграл Дирихле. Правда, некоторые
-                        специалисты отмечают, что иррациональное число стремительно отражает график функции.
-                        Интегрирование по частям, исключая очевидный случай, традиционно позиционирует сходящийся
-                        ряд.
-                        Не доказано, что лемма последовательно транслирует математический анализ. Нечетная функция
-                        порождает экспериментальный ряд Тейлора, что известно даже школьникам. График функции многих
-                        переменных определяет равновероятный неопределенный интеграл. Линейное программирование
-                        синхронизирует стремящийся бином Ньютона.
-                    </div>
-                    <div class="about__images" data-da=".about__col_second,767.98,last">
-                        <div class="about__image-item">
-                            <picture>
-                                <source srcset='../../../img/about/01.webp' type='image/webp'>
-                                <img src='../../../img/about/01.jpeg' alt='about image'>
-                            </picture>
-                        </div>
-                        <div class="about__image-item">
-                            <picture>
-                                <source srcset='../../../img/about/02.webp' type='image/webp'>
-                                <img src='../../../img/about/02.jpeg' alt='about image'>
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-                <div class="about__col about__col_second">
-                    <div class="about__image">
-                        <picture>
-                            <source srcset='../../../img/about/03.webp' type='image/webp'>
-                            <img src='../../../img/about/03.jpeg' alt='about image'>
-                        </picture>
-                    </div>
-                    <div class="about__statistics statistics-about">
-                        <div class="statistics-about__item">
-                            <div class="statistics-about__value">>10 <span>лет</span></div>
-                            <div class="statistics-about__text">на рынке</div>
-                        </div>
-                        <div class="statistics-about__item">
-                            <div class="statistics-about__value">200+</div>
-                            <div class="statistics-about__text">законченных проектов</div>
-                        </div>
-                        <div class="statistics-about__item">
-                            <div class="statistics-about__value">>50</div>
-                            <div class="statistics-about__text">специалистов в команде</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <about-section/>
         <section id="connect" class="connect">
             <div class='connect__container'>
                 <div class="connect__window window-connect">
@@ -403,7 +349,7 @@ function submitNewReview() {
                     <div class="window-connect__items">
                         <div class="window-connect__info">
                             <div class="window-connect__value">Адрес:</div>
-                            <div class="window-connect__text">г. Москва, ул.Андрея Андреева, 8</div>
+                            <div class="window-connect__text">Г. Казань., ул.Пушкина, 12</div>
                         </div>
                         <div class="window-connect__info">
                             <div class="window-connect__value">График работы:</div>
@@ -411,11 +357,11 @@ function submitNewReview() {
                         </div>
                         <div class="window-connect__info">
                             <div class="window-connect__value">Телефон:</div>
-                            <div class="window-connect__text"><a href="tel:+79697777777">+7(969)777 77 77</a></div>
+                            <div class="window-connect__text"><a href="tel:+79625641112">+7 (962) 564 11 12</a></div>
                         </div>
                         <div class="window-connect__info">
                             <div class="window-connect__value">Почта:</div>
-                            <div class="window-connect__text"><a href="mailto:info@твелви.ru">info@твелви.ru</a>
+                            <div class="window-connect__text"><a href="mailto:tvelvi.it@yandex.ru">tvelvi.it@yandex.ru</a>
                             </div>
                         </div>
                     </div>
@@ -424,7 +370,6 @@ function submitNewReview() {
                         <div class="window-connect__inputs">
                             <input type="text" name="name" placeholder="Имя" class="window-connect__input">
                             <input type="tel" name="tel" placeholder="Телефон" class="window-connect__input">
-                            <input type="email" name="email" placeholder="E-mail" class="window-connect__input">
                         </div>
                         <textarea name="message" placeholder="Сообщение"
                                   class="window-connect__textarea"></textarea>
@@ -433,7 +378,7 @@ function submitNewReview() {
                                     name="submit">Отправить
                             </button>
                             <div class="window-connect__personal-text">Нажимая на кнопку, вы даете свое согласие на
-                                обработку персональных данных
+                                 <a :href="route('privacyAgreement')">обработку персональных данных</a>
                             </div>
                         </div>
                     </form>

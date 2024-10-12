@@ -81,10 +81,6 @@ function cleanTitle(title) {
                 <div class="ready__image">
                     <img src='../../../img/services/ready/ready.svg' alt='ready'>
                 </div>
-                <div class="ready__text">Отмеченные услуги сохранились в форме обратной связи. Вам осталось добавить
-                    любой свой контакт и отправить информацию нам.
-                    Мы свяжемся с вами удобным для вас способом и проконсультируем по всем необходимым вопросам.
-                </div>
                 <div class="ready__request request-ready">
                     <div class="request-ready__content">
                         <h4 class="request-ready__title">Сроки и стоимость</h4>
@@ -93,7 +89,7 @@ function cleanTitle(title) {
                             ориентироваться. Точную оценку мы сможем дать, узнав детали.
                         </div>
                     </div>
-                    <a href="" class="request-ready__button button">запросить оценку</a>
+                    <button type="button" data-button-for-open-custom-popup="application" class="request-ready__button button">запросить оценку</button>
                 </div>
             </div>
         </section>

@@ -1,6 +1,6 @@
 {
   "resources/css/app.scss": {
-    "file": "assets/app-DMwL6IOs.css",
+    "file": "assets/app-FxO2whpT.css",
     "src": "resources/css/app.scss",
     "isEntry": true
   },
@@ -19,30 +19,6 @@
   "resources/fonts/icons.woff2": {
     "file": "assets/icons-P6H0azTz.woff2",
     "src": "resources/fonts/icons.woff2"
-  },
-  "resources/img/about-page/clients/lukoil.png": {
-    "file": "assets/lukoil-HyYvoM2U.png",
-    "src": "resources/img/about-page/clients/lukoil.png"
-  },
-  "resources/img/about-page/clients/lukoil.webp": {
-    "file": "assets/lukoil-B0SuYgRX.webp",
-    "src": "resources/img/about-page/clients/lukoil.webp"
-  },
-  "resources/img/about-page/clients/raifaizen.png": {
-    "file": "assets/raifaizen-BEJmh3rs.png",
-    "src": "resources/img/about-page/clients/raifaizen.png"
-  },
-  "resources/img/about-page/clients/raifaizen.webp": {
-    "file": "assets/raifaizen-D_zqEeWQ.webp",
-    "src": "resources/img/about-page/clients/raifaizen.webp"
-  },
-  "resources/img/about-page/honor.png": {
-    "file": "assets/honor-lbDO9Ppc.png",
-    "src": "resources/img/about-page/honor.png"
-  },
-  "resources/img/about-page/honor.webp": {
-    "file": "assets/honor-DIj8CeQW.webp",
-    "src": "resources/img/about-page/honor.webp"
   },
   "resources/img/about-page/honors.jpeg": {
     "file": "assets/honors-vw1AHZtn.jpeg",
@@ -132,13 +108,33 @@
     "file": "assets/watsapp-BjgY9vDC.webp",
     "src": "resources/img/contact-window/watsapp.webp"
   },
-  "resources/img/contacts/person.jpeg": {
-    "file": "assets/person-B-bmrdfg.jpeg",
-    "src": "resources/img/contacts/person.jpeg"
+  "resources/img/icons/checkbox-active.svg": {
+    "file": "assets/checkbox-active-BnMDV3Gx.svg",
+    "src": "resources/img/icons/checkbox-active.svg"
   },
-  "resources/img/contacts/person.webp": {
-    "file": "assets/person-Dox4KA6e.webp",
-    "src": "resources/img/contacts/person.webp"
+  "resources/img/icons/checkbox.svg": {
+    "file": "assets/checkbox-1Xp0s0zf.svg",
+    "src": "resources/img/icons/checkbox.svg"
+  },
+  "resources/img/icons/close.svg": {
+    "file": "assets/close-k_6NyTUK.svg",
+    "src": "resources/img/icons/close.svg"
+  },
+  "resources/img/icons/telegram.png": {
+    "file": "assets/telegram-CRdGufu2.png",
+    "src": "resources/img/icons/telegram.png"
+  },
+  "resources/img/icons/telegram.webp": {
+    "file": "assets/telegram-CK_CyqxR.webp",
+    "src": "resources/img/icons/telegram.webp"
+  },
+  "resources/img/icons/vk.jpg": {
+    "file": "assets/vk-CjjPh-Uq.jpg",
+    "src": "resources/img/icons/vk.jpg"
+  },
+  "resources/img/icons/vk.webp": {
+    "file": "assets/vk-wXzHKVNY.webp",
+    "src": "resources/img/icons/vk.webp"
   },
   "resources/img/logo.svg": {
     "file": "assets/logo-C5b5UPJR.svg",
@@ -309,7 +305,7 @@
     "src": "resources/img/special-offers/background.webp"
   },
   "resources/js/app.js": {
-    "file": "assets/app-BPxcZviW.js",
+    "file": "assets/app-DfY7LDgR.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -323,22 +319,21 @@
       "assets/tg-EkgJAspj.webp",
       "assets/tg-C4OdD94L.png",
       "assets/logo-C5b5UPJR.svg",
+      "assets/close-k_6NyTUK.svg",
       "assets/01-Bl3IrQJB.webp",
       "assets/01-Dl-_PhMw.jpeg",
       "assets/02-B9q5N54v.webp",
       "assets/02-Cz5AiFN-.jpeg",
       "assets/03-BxsRC7NE.webp",
       "assets/03-cNrVsjVq.jpeg",
-      "assets/raifaizen-D_zqEeWQ.webp",
-      "assets/raifaizen-BEJmh3rs.png",
-      "assets/lukoil-B0SuYgRX.webp",
-      "assets/lukoil-HyYvoM2U.png",
-      "assets/honor-DIj8CeQW.webp",
-      "assets/honor-lbDO9Ppc.png",
       "assets/honors-CSiIYkcP.webp",
       "assets/honors-vw1AHZtn.jpeg",
-      "assets/person-Dox4KA6e.webp",
-      "assets/person-B-bmrdfg.jpeg",
+      "assets/01-BQ-TkjIb.webp",
+      "assets/01-BbvEFvCu.jpeg",
+      "assets/02-CI_VVqHn.webp",
+      "assets/02-DJTtgbCL.jpeg",
+      "assets/03-DACRpW1z.webp",
+      "assets/03-DvqO4zgZ.jpeg",
       "assets/background-D-_MFx9t.webp",
       "assets/background-B5LxNRYs.png",
       "assets/telephones-CfDAKSy-.webp",
@@ -367,12 +362,6 @@
       "assets/06-B56pcp3a.png",
       "assets/background-DisGsjgU.webp",
       "assets/background-BgZGx_I8.png",
-      "assets/01-BQ-TkjIb.webp",
-      "assets/01-BbvEFvCu.jpeg",
-      "assets/02-CI_VVqHn.webp",
-      "assets/02-DJTtgbCL.jpeg",
-      "assets/03-DACRpW1z.webp",
-      "assets/03-DvqO4zgZ.jpeg",
       "assets/background-3b1zRALm.webp",
       "assets/background-CttqKZDJ.png",
       "assets/backgound-01-B1tlWBon.webp",
@@ -385,6 +374,10 @@
       "assets/backgound-mobile-speak-Kvobl6Ru.jpeg",
       "assets/03-CKp71wiF.webp",
       "assets/03-BSv90--g.png",
+      "assets/vk-wXzHKVNY.webp",
+      "assets/vk-CjjPh-Uq.jpg",
+      "assets/telegram-CK_CyqxR.webp",
+      "assets/telegram-CRdGufu2.png",
       "assets/ready-Diz233EA.svg"
     ]
   }

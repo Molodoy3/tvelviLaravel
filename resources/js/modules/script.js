@@ -112,7 +112,7 @@ export function delegationClick() {
 
         //?Открывание мобального окна (по классу open)
         //атрибуты: data-button-for-open-custom-popup="popup" - кнопка открывания; data-custom-popup="popup" - попап; data-close-for-custom-popup - кнопка закрывания (обязательно внутри попапа);  data-custom-popup-content - контентная оболочка (внутри попапа внутри body попапа).
-        /*if (targetElement.closest("[data-close-for-custom-popup]")) {
+        if (targetElement.closest("[data-close-for-custom-popup]")) {
             const popup = targetElement.closest("[data-custom-popup]");
             if (popup) {
                 popup.classList.remove('open');
@@ -154,7 +154,7 @@ export function delegationClick() {
                     header.style.paddingRight = 0;
                 }
             }
-        }*/
+        }
 
         //?Табы
         //Это добавить в app.js, если изначально видны не все элементы в табах, а только определенной категории

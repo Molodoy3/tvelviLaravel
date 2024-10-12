@@ -2,6 +2,7 @@
 
 import Header from "../Components/Header.vue";
 import Footer from "../Components/Footer.vue";
+import WindowApplication from "../Components/WindowApplication.vue";
 
 
 </script>
@@ -64,6 +65,7 @@ import Footer from "../Components/Footer.vue";
                     </div>
                 </div>
             </section>
+            <WindowApplication/>
         </main>
         <Footer></Footer>
     </div>

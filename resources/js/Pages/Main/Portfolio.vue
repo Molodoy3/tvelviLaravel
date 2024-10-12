@@ -24,7 +24,7 @@ import {Head} from "@inertiajs/vue3";
                 <div class="portfolio-welcome__text">Мы стремимся к длительным отношениям, с погружением в мир
                     бизнеса клиента. Это наш способ находить точные, красивые и своевременные решения
                 </div>
-                <a href="" class="portfolio-welcome__button button">Заказать разработку</a>
+                <button type="button" data-button-for-open-custom-popup="application" class="portfolio-welcome__button button">Заказать разработку</button>
             </div>
         </section>
         <section class="cases">

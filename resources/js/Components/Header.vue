@@ -46,27 +46,16 @@ function isActiveLink(route) {
                                 <li class="menu__item" :class="isActiveLink('reviews')"><a :href="route('reviews')"
                                                                                            class='menu__link'>Отзывы</a>
                                 </li>
-                                <li class="menu__item" :class="isActiveLink('services')"><a :href="route('portfolio')"
-                                                                                            class='menu__link'>Цены</a></li>
                                 <li class="menu__item" :class="isActiveLink('contacts')">
                                     <a :href="route('contacts')" class='menu__link'>Контакты</a>
-                                    <div data-spoller tabindex='-1' class="menu__arrow ic-arrow"></div>
-                                    <div class="menu__sub-list">
-                                        <ul>
-                                            <li><a href="article.html" class="menu__sub-link">Контакты 1</a></li>
-                                            <li><a href="" class="menu__sub-link">Контакты 2</a></li>
-                                            <li><a href="" class="menu__sub-link">Контакты 3</a></li>
-                                            <li><a href="" class="menu__sub-link">Контакты 4</a></li>
-                                        </ul>
-                                    </div>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
                 <div class="header__info info" data-da=".menu__body nav,1075,last">
-                    <a href="tel:+79157777777" class="info__item ic-telephone">+7 (915) 777 77 77</a>
-                    <div class="info__item ic-clock">пн-пт с 10 до 18 часов</div>
+                    <a href="tel:+79625641112" class="info__item ic-telephone">+7 (962) 564 11 12</a>
+                    <div class="info__item ic-clock">пн-пт с 9 до 18 часов</div>
                 </div>
             </div>
         </div>

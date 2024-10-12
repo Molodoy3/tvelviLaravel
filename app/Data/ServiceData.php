@@ -16,7 +16,7 @@ class ServiceData extends Data
         public string $title,
         #[Max(255)]
         public string $altTitle,
-        #[Max(1000)]
+        #[Max(500)]
         public ?string $description,
         #[Max(255)]
         public string $image

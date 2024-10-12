@@ -14,22 +14,22 @@
                         <li><a href="index.html">Главная</a></li>
                         <li><a href="">Услуги</a></li>
                         <li><a href="">О нас</a></li>
-                        <li><a href="">Портфоли</a></li>
+                        <li><a href="">Портфолио</a></li>
                         <li><a href="">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="footer__links">
                     <ul class="footer__social-list">
-                        <li><a class="ic-telegram" href="https://vk.com/tvelvi"></a></li>
+                        <li><a class="ic-telegram" href="https://t.me/tvelvi_it"></a></li>
                         <li><a class="ic-whatsapp" href="https://wa.me/message/GEJZ2WL6QLI2K1"></a></li>
-                        <li><a class="ic-vk" href="https://t.me/tvelvi_it"></a></li>
+                        <li><a class="ic-vk" href="https://vk.com/tvelvi"></a></li>
                     </ul>
                     <a href="/sitemap.xml" class="footer__sitemap">Карта сайта</a>
                 </div>
             </div>
             <div class="footer__bottom">
                 <div class="footer__info">© 2024 ТВЭЛВИ. Все права защищены.</div>
-                <a href="" class="footer__politic">Политика конфиденциальности</a>
+                <a :href="route('privacyAgreement')" class="footer__politic">Политика конфиденциальности</a>
             </div>
         </div>
     </footer>
