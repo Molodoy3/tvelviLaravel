@@ -93,7 +93,7 @@ function submit() {
                     </h1>
                     <div class="main-block__text">{{service.description}}
                     </div>
-                    <a :href="route('serviceOrder', service.slug)" class="main-block__button button">Заказать разработку</a>
+                    <button type="button" data-button-for-open-custom-popup="application" class="main-block__button button">Заказать разработку</button>
                 </div>
                 <div class="main-block__image">
                     <picture>
