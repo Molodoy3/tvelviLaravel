@@ -9,12 +9,12 @@ use Inertia\Inertia;
 
 class MainController extends Controller
 {
-    public function index() {
+    /*public function index() {
         return Inertia::render('Main/Index', [
             'lastArticles' => Article::query()->orderByDesc('created_at')->take(3)->get(),
             'lastReviews' => Review::query()->orderByDesc('created_at')->take(4)->get()
         ]);
-    }
+    }*/
     public function about() {
         return Inertia::render('Main/About', [
             'lastReviews' => Review::query()->orderByDesc('created_at')->take(4)->get()

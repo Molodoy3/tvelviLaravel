@@ -23,7 +23,9 @@ class ReviewController extends Controller
         return response()->json($items);
     }
     public function store(ReviewData $review) {
-        Review::query()->create($review->toArray());
+        $application = new ApplicationController();
+        $newReview = Review::query()->create($review->toArray());
+        $application->sendReview($newReview);
 
         return redirect()->route('reviews');
         return response()->json(['status' => 'success', 'review' => $review]);

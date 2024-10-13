@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 
 //основные страницы
-Route::get('/', [MainController::class, 'index'])->name('index');
+Route::get('/', [ServiceController::class, 'show'])->name('index');
 Route::get('/about', [MainController::class, 'about'])->name('about');
 Route::get('/portfolio', [MainController::class, 'portfolio'])->name('portfolio');
 Route::get('/contacts', [MainController::class, 'contacts'])->name('contacts');
@@ -28,6 +28,7 @@ Route::get('/article/{article}', [ArticleController::class, 'show'])->name('arti
 
 //отправка заявки
 Route::post('/application-send', [ApplicationController::class, 'send'])->name('applicationSend');
+Route::post('/big-application-send', [ApplicationController::class, 'bigApplicationSend'])->name('bigApplicationSend');
 Route::get('/successful-shipment', [ApplicationController::class, 'successfulShipment'])->name('successfulShipment');
 
 //сервисы

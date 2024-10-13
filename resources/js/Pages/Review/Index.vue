@@ -45,16 +45,12 @@ function submit() {
         preserveState: true,
         preserveScroll: true,
         onSuccess: () => {
-            window.scrollTo({
+            alert('Ваш отзыв отправлен! Как только его одобрят он появятся на сайте!')
+            /*window.scrollTo({
                 top: 0,
                 behavior: 'smooth' // Плавная прокрутка (по желанию)
-            });
-            reviews.value.data = [newReview, ...reviews.value.data];
-            //location.reload();
-
-
-            //console.log(response)
-            //newReview.reset();
+            });*/
+            //reviews.value.data = [newReview, ...reviews.value.data];
         },
     });
 }

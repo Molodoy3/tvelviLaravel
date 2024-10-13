@@ -861,6 +861,7 @@ mark {
 /*=============================================================================================================*/
 .articles {
     flex: 1 1 auto;
+
     &_main {
         @include adaptiv-value('padding-top', 148, 100, 1);
 
@@ -993,6 +994,7 @@ mark {
 
     &__button-more {}
 }
+
 @keyframes scaling {
     0% {
         transform: scale(0.9);
@@ -1002,6 +1004,7 @@ mark {
         transform: scale(1.1);
     }
 }
+
 /*=============================================================================================================*/
 .about {
     @include adaptiv-value('padding-top', 94, 80, 1);
@@ -1234,7 +1237,9 @@ mark {
         @media (max-width: $md4) {
             flex: 0 1 100%;
         }
-
+        &.error{
+            border: 1px solid var(--red);
+        }
         border-radius: 6px;
         background: rgb(233, 233, 233);
         padding: 8px;
@@ -1253,7 +1258,9 @@ mark {
         border-radius: 6px;
         background: rgb(233, 233, 233);
         padding: 8px;
-
+        &.error{
+            border: 1px solid var(--red);
+        }
         &::placeholder {
             color: rgb(66, 66, 66);
         }
@@ -1274,17 +1281,21 @@ mark {
     &__personal-text {
         color: rgb(148, 148, 148);
         line-height: 130%;
+
         a {
             transition: color 0.3s ease;
+
             &:focus {
                 color: var(--red);
             }
+
             @media (any-hover: hover) {
-                &:hover{
+                &:hover {
                     color: var(--red);
                 }
             }
         }
+
         @include adaptiv-value('font-size', 10, 8, 1);
     }
 }
@@ -1911,17 +1922,22 @@ mark {
 /*=============================================================================================================*/
 .honors {
     @include adaptiv-value('padding-bottom', 108, 80, 1);
-    .advantages__items{
+
+    .advantages__items {
         grid-template-columns: repeat(auto-fill, minmax(rem(200), 1fr)) !important;
     }
+
     &__container {}
-    &__content{
+
+    &__content {
         @media (max-width: $md3) {
             margin-bottom: rem(28);
         }
+
         flex: 1 1 auto;
 
     }
+
     &__title {
         @include adaptiv-value('margin-bottom', 25, 21, 1);
 
@@ -2041,17 +2057,22 @@ mark {
         &:not(:last-child) {
             margin-bottom: rem(20);
         }
+
         span {
             font-weight: 500;
             display: inline-block;
             margin-bottom: em(8, 14);
             margin-top: em(8, 14);
         }
-        ul, li {
+
+        ul,
+        li {
             list-style-type: disc;
         }
+
         li {
             margin-left: rem(20);
+
             &:not(:last-child) {
                 margin-bottom: em(8, 14);
             }
@@ -2581,6 +2602,7 @@ mark {
         opacity: 0;
         transition: opacity 0.5s ease, transform 0.5s ease;
         transform: scale(0);
+
         &.active {
             transition-delay: 0.4s;
             transform: scale(1);
@@ -2710,35 +2732,42 @@ mark {
             }
         }
     }
-    &__title-list{
+
+    &__title-list {
         font-weight: 500;
         margin-bottom: em(13, 16);
         display: inline-block;
     }
+
     &__bred-crumbs {}
 
     &__title {
-        @media (max-width: $md3){
-            br{
+        @media (max-width: $md3) {
+            br {
                 display: none;
             }
         }
+
         @include adaptiv-value('margin-bottom', 40, 20, 1);
     }
+
     a {
         color: var(--red);
         transition: color 0.3s ease;
         text-decoration: underline;
+
         &:focus {
             color: rgb(212, 72, 56);
         }
+
         @media (any-hover: hover) {
-            &:hover{
+            &:hover {
                 color: rgb(196, 67, 53);
 
             }
         }
     }
+
     &__list {
         li {
             margin-left: rem(20);
@@ -2924,6 +2953,7 @@ mark {
         }
     }
 }
+
 /*=============================================================================================================*/
 .application-gratitude {
     @include adaptiv-value('padding-top', 200, 60, 1);
@@ -2960,6 +2990,7 @@ mark {
 
     &__social-list {}
 }
+
 .social-list {
     display: flex;
     flex-wrap: wrap;
@@ -3024,8 +3055,212 @@ mark {
         @include adaptiv-value('font-size', 24, 20, 1);
     }
 }
+
 /*=============================================================================================================*/
+.stages {
+    @include adaptiv-value('padding-top', 100, 80, 1);
+    @include adaptiv-value('padding-bottom', 46.5, 32.5, 1);
+    border-bottom: 1px solid rgb(222, 222, 222);
+    @include adaptiv-value('margin-bottom', 47, 12, 1);
+
+    &__container {}
+
+    &__title {
+        @include adaptiv-value('margin-bottom', 40, 20, 1);
+
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(rem(320), 1fr));
+        @include adaptiv-value('gap', 30, 18, 1);
+        @include adaptiv-value('margin-bottom', 40, 25, 1);
+    }
+
+    &__item {
+        background-color: #fff;
+        padding: rem(20) 0;
+        @include adaptiv-value('padding-right', 43, 30, 1);
+        @include adaptiv-value('padding-left', 43, 30, 1);
+        @include adaptiv-value('min-height', 176, 96, 1);
+        border-radius: 18px;
+        display: flex;
+        column-gap: rem(25);
+        align-items: center;
+
+        &_main {
+            @include adaptiv-value('padding-top', 35, 16, 1);
+            @include adaptiv-value('padding-right', 30, 20, 1);
+            @include adaptiv-value('padding-left', 30, 20, 1);
+            @include adaptiv-value('padding-bottom', 17, 1, 1);
+            grid-row: span 2;
+            flex-direction: column;
+        }
+
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__how-title {
+        @include adaptiv-value('font-size', 20, 14, 1);
+        font-weight: 700;
+        margin-bottom: em(8, 20);
+        line-height: perc(29, 20);
+    }
+
+    &__how-text {
+        font-size: rem(12);
+    }
+
+    &__image {
+        margin: 0 auto;
+        @include adaptiv-value('height', 200, 156, 1);
+
+        img {
+            max-height: 100%;
+            max-width: 100%
+        }
+    }
+
+    &__icon {
+        flex: 0 0 rem(48);
+        font-size: rem(44);
+
+        @media (max-width: $md3) {
+            font-size: rem(30);
+            flex: 0 0 rem(30);
+        }
+    }
+
+    &__bottom {
+        text-align: center;
+    }
+
+    &__button {
+        border: 1px solid #000;
+        border-radius: rem(5);
+        @include adaptiv-value('font-size', 14, 12, 1);
+        font-weight: 500;
+        transition: color 0.3s ease, border-color 0.3s ease;
+        @media (max-width: $md4){
+            display: block;
+        padding: rem(10) rem(80);
+        width: 100%;
+        }
+        text-align: center;
+        &:focus {
+            color: var(--red);
+            border: 1px solid var(--red);
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: var(--red);
+                border: 1px solid var(--red);
+            }
+        }
+
+        padding: rem(15) rem(80);
+
+    }
+
+    &__stage {
+        @include adaptiv-value('font-size', 16, 14, 1);
+        font-weight: 700;
+        color: rgb(132, 132, 132);
+        max-width: rem(188);
+    }
+
+    &__numb {
+        @include adaptiv-value('font-size', 67, 52, 1);
+        color: rgb(236, 236, 236);
+        font-weight: 700;
+        position: absolute;
+        bottom: 0;
+        transform: translate(0, -10%);
+        @include adaptiv-value('right', 27, 18, 1);
+    }
+}
+
 /*=============================================================================================================*/
+.values {
+    @include adaptiv-value('margin-bottom', 100, 80, 1);
+    &__container {
+        @media (min-width: $md3){
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(rem(320), 1fr));
+            @include adaptiv-value('gap', 30, 20, 1);
+        }
+
+    }
+    &__bottom{
+        text-align: center;
+    }
+    &__col {
+        @media (max-width: $md3){
+            &:not(:last-child) {
+                margin-bottom: rem(20);
+            }
+        }
+        display: flex;
+        flex-direction: column;
+        &_main {
+            overflow: hidden;
+            position: relative;
+            background-color: #181818;
+            border-radius: rem(18);
+            color: #fff;
+            @include adaptiv-value('height', 341, 210, 1);
+            padding: rem(17) rem(27);
+            padding-bottom: rem(37);
+        }
+    }
+
+    &__title {
+        flex: 1 1 auto;
+        @include adaptiv-value('margin-bottom', 40, 20, 1);
+        @media (min-width: $md3){
+            text-align: left;
+
+        }
+    }
+
+    &__button {
+        align-self: flex-start;
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__category {
+        position: relative;
+        @include adaptiv-value('font-size', 20, 14, 1);
+        font-weight: 700;
+        margin-bottom: rem(20);
+        flex: 1 1 auto;
+        line-height: 200%;
+    }
+
+    &__price {
+        position: relative;
+        @include adaptiv-value('font-size', 44, 24, 1);
+        @include adaptiv-value('margin-bottom', 15, 5, 1);
+        font-weight: 700;
+    }
+
+    &__term {
+        @include adaptiv-value('font-size', 16, 14, 1);
+        position: relative;
+
+    }
+}
+
 /*=============================================================================================================*/
 /*=============================================================================================================*/
 /*=============================================================================================================*/

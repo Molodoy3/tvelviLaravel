@@ -8,26 +8,10 @@ const application = useForm({
     "task": "",
 })
 
-const props = defineProps({
-    'errors': Object
-})
-
 function submit() {
     application.post(route('applicationSend'), {
         preserveState: true,
-        preserveScroll: true,
-        onSuccess: () => {
-            /*window.scrollTo({
-                top: 0,
-                behavior: 'smooth' // Плавная прокрутка (по желанию)
-            });*/
-            //reviews.value.data = [newReview, ...reviews.value.data];
-            //location.reload();
-
-
-            //console.log(response)
-            //newReview.reset();
-        },
+        preserveScroll: true
     });
 }
 </script>

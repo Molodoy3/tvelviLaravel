@@ -24,6 +24,10 @@ class ServiceData extends Data
         public string $image,
         #[Max(255), Unique, StringType]
         public ?string $slug,
+        #[Max(500)]
+        public ?string $howDescription,
+        #[Max(255)]
+        public ?string $howTitle,
     )
     {
     }

@@ -2,6 +2,7 @@
 
 import DefaultLayout from "../../Layouts/DefaultLayout.vue";
 import {Head} from "@inertiajs/vue3";
+import BigApplicationForm from "../../Components/BigApplicationForm.vue";
 
 </script>
 
@@ -137,23 +138,7 @@ import {Head} from "@inertiajs/vue3";
                     <mark>Расскажите</mark>
                     про свой проект
                 </h2>
-                <form action="#" class="portfolio-form__form reviews__form form-reviews form-reviews_white">
-                    <div class="form-reviews__col">
-                        <div class="form-reviews__inputs">
-                            <input type="text" name="name" placeholder="Имя" class="form-reviews__input">
-                            <input type="tel" name="tel" placeholder="Телефон" class="form-reviews__input">
-                            <input type="text" name="company" placeholder="Компания" class="form-reviews__input">
-                            <input type="email" name="email" placeholder="E-mail" class="form-reviews__input">
-                        </div>
-                        <button type="submit" name="submit" class="reviews__button button">отправить</button>
-                    </div>
-                    <div class="form-reviews__col">
-                        <textarea name="text" placeholder="Текст сообщения" class="form-reviews__textarea"></textarea>
-                        <button type="submit" name="submit"
-                                class="reviews__button reviews__button_mobile button">отправить
-                        </button>
-                    </div>
-                </form>
+                <BigApplicationForm/>
             </div>
         </section>
     </DefaultLayout>

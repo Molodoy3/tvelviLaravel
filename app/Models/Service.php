@@ -19,7 +19,9 @@ class Service extends Model
         'altTitle',
         'description',
         'image',
-        'slug'
+        'slug',
+        'how-title',
+        'how-description',
     ];
     public function getImageAttribute($value)
     {
