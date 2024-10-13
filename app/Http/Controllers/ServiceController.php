@@ -9,12 +9,17 @@ use Inertia\Inertia;
 
 class ServiceController extends Controller
 {
-    public function show(Service $service)
+    public function show(string $slug)
     {
-        //dd($service->steps()->get());
-        //dd(Storage::disk('public')->url('services/'.$service->image));
-        //$service->image = Storage::disk('public')->url('services/'.$service->image);
         return Inertia::render('Service/Show', [
+            'service' => Service::query()->where('slug', $slug)->firstOrFail(),
+        ]);
+    }
+    public function showOrder(string $slug)
+    {
+        $service = Service::query()->where('slug', $slug)->firstOrFail();
+        //dd($service);
+        return Inertia::render('Service/ShowOrder', [
             'service' => $service,
             'steps' => $service->steps()->get()
         ]);

@@ -3,6 +3,8 @@
 namespace App\Data;
 
 use Spatie\LaravelData\Attributes\Validation\Max;
+use Spatie\LaravelData\Attributes\Validation\StringType;
+use Spatie\LaravelData\Attributes\Validation\Unique;
 use Spatie\LaravelData\Data;
 use Spatie\TypeScriptTransformer\Attributes\TypeScript;
 
@@ -19,7 +21,9 @@ class ServiceData extends Data
         #[Max(500)]
         public ?string $description,
         #[Max(255)]
-        public string $image
+        public string $image,
+        #[Max(255), Unique, StringType]
+        public ?string $slug,
     )
     {
     }

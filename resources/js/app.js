@@ -96,6 +96,7 @@ function windowLoad() {
             input.addEventListener("blur", mask, false);
             input.addEventListener("keydown", mask, false);
         });
+
     }
 
     function mask(event) {

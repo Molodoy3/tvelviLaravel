@@ -13,7 +13,6 @@ Route::get('/', [MainController::class, 'index'])->name('index');
 Route::get('/about', [MainController::class, 'about'])->name('about');
 Route::get('/portfolio', [MainController::class, 'portfolio'])->name('portfolio');
 Route::get('/contacts', [MainController::class, 'contacts'])->name('contacts');
-Route::get('/service/{service}', [ServiceController::class, 'show'])->name('service');
 //политика
 Route::get('/privacy-agreement', [MainController::class, 'privacyAgreement'])->name('privacyAgreement');
 Route::get('/privacy', [MainController::class, 'privacy'])->name('privacy');
@@ -31,9 +30,8 @@ Route::get('/article/{article}', [ArticleController::class, 'show'])->name('arti
 Route::post('/application-send', [ApplicationController::class, 'send'])->name('applicationSend');
 Route::get('/successful-shipment', [ApplicationController::class, 'successfulShipment'])->name('successfulShipment');
 
+//сервисы
+Route::get('/{service}', [ServiceController::class, 'show'])->name('service'); //типо превью услуги
+Route::get('/{service}/order', [ServiceController::class, 'showOrder'])->name('serviceOrder'); //страница для просмотра подробной инф-ции заказа + заказать
 
 
-
-/*Route::get('/', function () {
-    return view('app');
-});*/

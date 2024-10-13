@@ -33,7 +33,7 @@ function isActiveLink(route) {
                                     <div class="menu__sub-list">
                                         <ul>
                                             <li v-for="service in $page.props.services[0]">
-                                                <a :href="route('service', service.id)" class="menu__sub-link">{{service.altTitle}}</a>
+                                                <a :href="route('service', service.slug)" class="menu__sub-link">{{service.altTitle}}</a>
                                             </li>
                                         </ul>
                                     </div>

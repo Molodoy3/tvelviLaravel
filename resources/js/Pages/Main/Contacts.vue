@@ -28,26 +28,26 @@ import DefaultLayout from "../../Layouts/DefaultLayout.vue";
                                 class="reviews__button reviews__button_mobile button">отправить
                         </button>
                     </div>
-<!--                    <div class="form-reviews__col">
-                        <div class="form-reviews__person person-form">
-                            <div class="person-form__header">
-                                <div class="person-form__image">
-                                    <picture>
-                                        <source srcset='../../../img/contacts/person.webp' type='image/webp'>
-                                        <img src='../../../img/contacts/person.jpeg' alt='person'>
-                                    </picture>
-                                </div>
-                                <div class="form-reviews__info">
-                                    <h2 class="person-form__name">Морозов
-                                        Андрей Викторович</h2>
-                                    <div class="person-form__position">Руководитель компании</div>
-                                </div>
-                            </div>
-                            <div class="person-form__text ic-quotes">
-                                Изменение глобальной стратегии оправдывает типичный комплексный анализ ситуации.
-                            </div>
-                        </div>
-                    </div>-->
+                    <!--                    <div class="form-reviews__col">
+                                            <div class="form-reviews__person person-form">
+                                                <div class="person-form__header">
+                                                    <div class="person-form__image">
+                                                        <picture>
+                                                            <source srcset='../../../img/contacts/person.webp' type='image/webp'>
+                                                            <img src='../../../img/contacts/person.jpeg' alt='person'>
+                                                        </picture>
+                                                    </div>
+                                                    <div class="form-reviews__info">
+                                                        <h2 class="person-form__name">Морозов
+                                                            Андрей Викторович</h2>
+                                                        <div class="person-form__position">Руководитель компании</div>
+                                                    </div>
+                                                </div>
+                                                <div class="person-form__text ic-quotes">
+                                                    Изменение глобальной стратегии оправдывает типичный комплексный анализ ситуации.
+                                                </div>
+                                            </div>
+                                        </div>-->
                 </form>
             </div>
         </section>
@@ -77,16 +77,11 @@ import DefaultLayout from "../../Layouts/DefaultLayout.vue";
                     </div>
                 </div>
             </div>
-            <div class="connect__map connect__map_main" style="position:relative;overflow:hidden;"><!-- <a
-                        href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
-                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
-                        href="https://yandex.ru/maps/geo/ulitsa_pavla_andreyeva_7_podyezd_1/2092134474/?ll=37.639295%2C55.717424&utm_medium=mapframe&utm_source=maps&z=14.51"
-                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Павла Андреева, 7, подъезд 1
-                        — Яндекс Карты</a> -->
+            <div class="connect__map connect__map_main" style="position:relative;overflow:hidden;">
                 <iframe
-                    src="https://yandex.ru/map-widget/v1/?ll=37.639295%2C55.717424&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjY4ODI5MhJX0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINGD0LvQuNGG0LAg0J_QsNCy0LvQsCDQkNC90LTRgNC10LXQstCwLCA3LCDQv9C-0LTRitC10LfQtCAxIgoNgH8WQhXa4V5CMMrgzeUH&z=14.51"
-                    frameborder="1" allowfullscreen="true"
-                    style="position:relative;"></iframe>
+                    src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=49.124875%2C55.789051&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjI2NTQwNBJ30KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQotCw0YLQsNGA0YHRgtCw0L0gKNCi0LDRgtCw0YDRgdGC0LDQvSksINCa0LDQt9Cw0L3RjCwg0YPQu9C40YbQsCDQn9GD0YjQutC40L3QsCwgMTIiCg3gf0RCFf0nX0I%2C&z=17.06"
+                    frameborder="1" allowfullscreen="true" style="position:relative;">
+                </iframe>
             </div>
         </section>
     </DefaultLayout>

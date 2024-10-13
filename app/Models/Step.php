@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class Step extends Model
 {
@@ -24,6 +25,10 @@ class Step extends Model
     public function getImageAttribute($value)
     {
         return $value ? Storage::disk('public')->url('steps/' . $value) : null;
+    }
+    public function getDescriptionAttribute($value)
+    {
+        return Str::ucfirst($value);
     }
     public function service(): BelongsTo{
         return $this->belongsTo(Service::class, 'id_service');
