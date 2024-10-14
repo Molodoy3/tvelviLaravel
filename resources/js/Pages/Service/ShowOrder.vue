@@ -60,8 +60,8 @@ function cleanTitle(title) {
                     <div class="steps__image">
                         <div class="steps__tick ic-tick" :class="{'steps__tick_white': step.executed == 0}"></div>
                         <picture>
-                            <source :srcset='getStringUntilDot(step.image) + ".webp"' type='image/webp'>
-                            <img :src='step.image' alt='step image'>
+                            <source srcset='../../../img/services/main-block/screens.webp' type='image/webp'>
+                            <img src='../../../img/services/main-block/screens.png' alt='step image'>
                         </picture>
                         <div class="steps__arrow">
                             <svg width="5.731934" viewBox="0 0 5.73193 164" fill="none"

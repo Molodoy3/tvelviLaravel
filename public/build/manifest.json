@@ -252,6 +252,14 @@
     "file": "assets/background-3b1zRALm.webp",
     "src": "resources/img/services/main-block/background.webp"
   },
+  "resources/img/services/main-block/screens.png": {
+    "file": "assets/screens-DTxwzHdh.png",
+    "src": "resources/img/services/main-block/screens.png"
+  },
+  "resources/img/services/main-block/screens.webp": {
+    "file": "assets/screens-DMRGJtfS.webp",
+    "src": "resources/img/services/main-block/screens.webp"
+  },
   "resources/img/services/ready/ready.svg": {
     "file": "assets/ready-Diz233EA.svg",
     "src": "resources/img/services/ready/ready.svg"
@@ -313,7 +321,7 @@
     "src": "resources/img/values/bg-02.svg"
   },
   "resources/js/app.js": {
-    "file": "assets/app-dcU5aWLG.js",
+    "file": "assets/app-BPGExc8z.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -388,6 +396,8 @@
       "assets/06-B56pcp3a.png",
       "assets/background-DisGsjgU.webp",
       "assets/background-BgZGx_I8.png",
+      "assets/screens-DMRGJtfS.webp",
+      "assets/screens-DTxwzHdh.png",
       "assets/ready-Diz233EA.svg"
     ]
   }
