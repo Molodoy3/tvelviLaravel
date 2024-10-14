@@ -317,6 +317,16 @@ mark {
 
     &__item {
         max-width: rem(529);
+        &:first-child {
+            .advantages__icon{
+                font-size: rem(22);
+            }
+        }
+        &:nth-child(2) {
+            .advantages__icon{
+                padding-left: rem(7);
+            }
+        }
     }
 
     &__header {
@@ -390,7 +400,7 @@ mark {
     }
 
     &__content {
-        background-color: rgb(217, 217, 217);
+        background-color: rgb(247, 248, 252);
         border-radius: 18px 18px 0px 0px;
 
         text-align: center;
@@ -1546,7 +1556,7 @@ mark {
 .portfolio-welcome {
     @include adaptiv-value('padding-top', 195, 100, 1);
     @include adaptiv-value('padding-bottom', 120, 60, 1);
-
+    position: relative;
     &__container {
         position: relative;
         text-align: center;
@@ -1992,6 +2002,7 @@ mark {
 
     &__item {
         display: flex;
+
         @include adaptiv-value('column-gap', 21, 8, 1);
     }
 
@@ -3061,7 +3072,7 @@ mark {
 .stages {
     @include adaptiv-value('padding-top', 100, 80, 1);
     @include adaptiv-value('padding-bottom', 46.5, 32.5, 1);
-    border-bottom: 1px solid rgb(222, 222, 222);
+    //border-bottom: 1px solid rgb(222, 222, 222);
     @include adaptiv-value('margin-bottom', 47, 12, 1);
 
     &__container {}

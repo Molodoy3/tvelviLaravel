@@ -13,11 +13,8 @@ import BigApplicationForm from "../../Components/BigApplicationForm.vue";
     </Head>
     <DefaultLayout>
         <section class="portfolio-welcome">
-            <picture>
-                <source srcset='../../../img/services/main-block/background.webp' type='image/webp'>
-                <img class="steps-welcome__background" src='../../../img/services/main-block/background.png'
+                <img class="steps-welcome__background" src='../../../img/portfolio/Bg.svg'
                      alt='background'>
-            </picture>
             <div class="portfolio-welcome__container">
                 <h1 class="portfolio-welcome__title title-red">Кейсы, которыми <br>
                     <mark>мы гордимся</mark>

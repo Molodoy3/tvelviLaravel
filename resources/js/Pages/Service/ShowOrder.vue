@@ -26,11 +26,8 @@ function cleanTitle(title) {
     </Head>
     <DefaultLayout>
         <section class="steps-welcome">
-            <picture>
-                <source srcset='../../../img/services/main-block/background.webp' type='image/webp'>
-                <img class="steps-welcome__background" src='../../../img/services/main-block/background.png'
-                     alt='background'>
-            </picture>
+            <img class="steps-welcome__background" src='../../../img/portfolio/Bg.svg'
+                 alt='background'>
             <div class='steps-welcome__container'>
                 <div class="steps-welcome__content">
                     <h1 class="steps-welcome__title title-red" v-html="service.title">
