@@ -1,23 +1,39 @@
 {
   "resources/css/app.scss": {
-    "file": "assets/app-CkXK7ztb.css",
+    "file": "assets/app-BVKp3QlQ.css",
     "src": "resources/css/app.scss",
     "isEntry": true
   },
+  "resources/fonts/Micra-Bold.eot": {
+    "file": "assets/Micra-Bold--RxBHYht.eot",
+    "src": "resources/fonts/Micra-Bold.eot"
+  },
+  "resources/fonts/Micra-Bold.ttf": {
+    "file": "assets/Micra-Bold-51AOWRAj.ttf",
+    "src": "resources/fonts/Micra-Bold.ttf"
+  },
+  "resources/fonts/Micra-Bold.woff": {
+    "file": "assets/Micra-Bold-Tk9IQWvq.woff",
+    "src": "resources/fonts/Micra-Bold.woff"
+  },
+  "resources/fonts/Micra.eot": {
+    "file": "assets/Micra-BYaIINiS.eot",
+    "src": "resources/fonts/Micra.eot"
+  },
+  "resources/fonts/Micra.ttf": {
+    "file": "assets/Micra-CZMurcl_.ttf",
+    "src": "resources/fonts/Micra.ttf"
+  },
   "resources/fonts/Micra.woff": {
-    "file": "assets/Micra-BIYJ-Lwo.woff",
+    "file": "assets/Micra-VATiUo7P.woff",
     "src": "resources/fonts/Micra.woff"
   },
-  "resources/fonts/Micra.woff2": {
-    "file": "assets/Micra-Bt2B6JXu.woff2",
-    "src": "resources/fonts/Micra.woff2"
-  },
   "resources/fonts/icons.woff": {
-    "file": "assets/icons-B1FP7bi-.woff",
+    "file": "assets/icons-hpx3HjDY.woff",
     "src": "resources/fonts/icons.woff"
   },
   "resources/fonts/icons.woff2": {
-    "file": "assets/icons-a42NWXT3.woff2",
+    "file": "assets/icons-lRmNcIpe.woff2",
     "src": "resources/fonts/icons.woff2"
   },
   "resources/img/about-page/honors.jpeg": {

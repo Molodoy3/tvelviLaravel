@@ -6,10 +6,32 @@
     font-style: normal;
 }
 
+/*
 @font-face {
     font-family: Micra;
     font-display: swap;
     src: url("../fonts/Micra.woff2") format("woff2"), url("../fonts/Micra.woff") format("woff");
     font-weight: 400;
+    font-style: normal;
+}*/
+@font-face {
+    font-family: 'Micra';
+    src: url('../fonts/Micra-Bold.eot');
+    src: local('Micra Bold'), local('Micra-Bold'),
+    url('../fonts/Micra-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Micra-Bold.woff') format('woff'),
+    url('../fonts/Micra-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Micra';
+    src: url('../fonts/Micra.eot');
+    src: local('Micra'),
+    url('../fonts/Micra.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Micra.woff') format('woff'),
+    url('../fonts/Micra.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
 }
