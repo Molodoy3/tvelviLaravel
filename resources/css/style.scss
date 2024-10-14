@@ -222,6 +222,7 @@ mark {
         @media (min-width: $md3) {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             column-gap: rem(20);
         }
     }
@@ -384,7 +385,7 @@ mark {
 
     &__items {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(rem(290), 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(rem(240), 1fr));
         @include adaptiv-value('gap', 30, 22, 1);
     }
 
