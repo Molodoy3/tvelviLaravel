@@ -6,6 +6,7 @@ use App\Models\Article;
 use App\Models\Review;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
+use Spatie\Sitemap\SitemapGenerator;
 
 class MainController extends Controller
 {
@@ -16,6 +17,9 @@ class MainController extends Controller
         ]);
     }*/
     public function about() {
+        //Sitema
+        dd(SitemapGenerator::create('https://tvelvi.com')->getSitemap()->writeToDisk('public', 'sitemap.xml', true));
+
         return Inertia::render('Main/About', [
             'lastReviews' => Review::query()->orderByDesc('created_at')->take(4)->get()
         ]);
