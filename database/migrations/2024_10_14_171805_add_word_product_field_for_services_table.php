@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::table('services', function (Blueprint $table) {
             $table->string('product')->nullable();
             $table->string('productMany')->nullable();
-            $table->string('gendorWordProduct')->nullable();
+            $table->tinyInteger('gendorWordProduct')->nullable();
         });
     }
 

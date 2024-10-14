@@ -22,6 +22,9 @@ class Service extends Model
         'slug',
         'how-title',
         'how-description',
+        'product',
+        'productMany',
+        'gendorWordProduct'
     ];
     public function getImageAttribute($value)
     {

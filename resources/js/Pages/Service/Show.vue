@@ -137,8 +137,8 @@ function submit() {
                             <div class="advantages__icon ic-support"></div>
                             <h5 class="advantages__item-title">Поддержка после запуска</h5>
                         </div>
-                        <div class="advantages__text">Обеспечиваем техническую поддержку и обновления вашего
-                            приложения.
+                        <div class="advantages__text">Обеспечиваем техническую поддержку и обновления <span v-text="service.gendorWordProduct ? 'вашей' : 'вашего'"></span>
+                            {{service.product}}
                         </div>
                     </div>
                 </div>
@@ -190,7 +190,7 @@ function submit() {
                         </div>
                         <div class="special-offers__content">
                             <div class="special-offers__icon ic-tick"></div>
-                            <h5 class="special-offers__title-item">Бесплатное тестирование приложения</h5>
+                            <h5 class="special-offers__title-item">Бесплатное тестирование {{service.product}}</h5>
                             <div class="special-offers__text">При заказе разработки.</div>
                         </div>
                     </div>
@@ -214,7 +214,7 @@ function submit() {
         </section>
         <section class="stages">
             <div class='stages__container'>
-                <h2 class="stages__title title"><mark>Этапы разработки</mark> приложений</h2>
+                <h2 class="stages__title title"><mark>Этапы разработки</mark> {{service.productMany}}</h2>
                 <div class="stages__items">
                     <div class="stages__item stages__item_main">
                         <h4 class="stages__how-title">{{service['how-title']}}</h4>
@@ -238,7 +238,7 @@ function submit() {
                     </div>
                     <div class="stages__item">
                         <div class="stages__icon ic-stage-03"></div>
-                        <div class="stages__stage">Прототип приложения</div>
+                        <div class="stages__stage">Прототип {{service.product}}</div>
                         <div class="stages__numb">03</div>
                     </div>
                     <div class="stages__item">
@@ -258,7 +258,7 @@ function submit() {
                     </div>
                     <div class="stages__item">
                         <div class="stages__icon ic-stage-07"></div>
-                        <div class="stages__stage">Продвижение приложения</div>
+                        <div class="stages__stage">Продвижение {{service.product}}</div>
                         <div class="stages__numb">07</div>
                     </div>
                 </div>
@@ -270,7 +270,7 @@ function submit() {
         <section class="values">
             <div class='values__container'>
                 <div class="values__col">
-                    <h2 class="values__title title"><mark>Сроки и стоимость</mark> разработки приложений</h2>
+                    <h2 class="values__title title"><mark>Сроки и стоимость</mark> разработки {{service.productMany}}   </h2>
                     <button data-da=".values__bottom,767,last" type="button" data-button-for-open-custom-popup="application" class="values__button button">Заказать разработку</button>
                 </div>
                 <div class="values__col values__col_main">
