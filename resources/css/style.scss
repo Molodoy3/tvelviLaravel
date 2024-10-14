@@ -258,8 +258,8 @@ mark {
 
     &__image {
         @media (min-width: $md2) {
-            margin-right: rem(-51);
-            margin-bottom: rem(-70);
+            //margin-right: rem(-51);
+            margin-bottom: rem(-40);
         }
 
         @include adaptiv-value('width', 742, 449, 1);
