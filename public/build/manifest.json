@@ -265,11 +265,11 @@
     "src": "resources/img/reviews/background.webp"
   },
   "resources/img/services/main-block/screens.png": {
-    "file": "assets/screens-DTxwzHdh.png",
+    "file": "assets/screens-CNJkIxuY.png",
     "src": "resources/img/services/main-block/screens.png"
   },
   "resources/img/services/main-block/screens.webp": {
-    "file": "assets/screens-DMRGJtfS.webp",
+    "file": "assets/screens-B4AjDHNB.webp",
     "src": "resources/img/services/main-block/screens.webp"
   },
   "resources/img/services/ready/ready.svg": {
@@ -333,7 +333,7 @@
     "src": "resources/img/values/bg-02.svg"
   },
   "resources/js/app.js": {
-    "file": "assets/app-Cd04B5-s.js",
+    "file": "assets/app-BUe2ez-M.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -407,8 +407,8 @@
       "assets/06-B56pcp3a.png",
       "assets/background-DisGsjgU.webp",
       "assets/background-BgZGx_I8.png",
-      "assets/screens-DMRGJtfS.webp",
-      "assets/screens-DTxwzHdh.png",
+      "assets/screens-B4AjDHNB.webp",
+      "assets/screens-CNJkIxuY.png",
       "assets/ready-Diz233EA.svg"
     ]
   }

@@ -18,6 +18,7 @@ class MainController extends Controller
     }*/
     public function about() {
         //Sitema
+        //SitemapGenerator::create(config('app.url'))->writeToFile(public_path('sitemap.xml'));
         //dd(SitemapGenerator::create('https://tvelvi.com')->getSitemap()->writeToDisk('public', 'sitemap.xml', true));
 
         return Inertia::render('Main/About', [
