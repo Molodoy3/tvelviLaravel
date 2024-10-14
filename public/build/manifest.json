@@ -1,6 +1,6 @@
 {
   "resources/css/app.scss": {
-    "file": "assets/app-CkMR45g_.css",
+    "file": "assets/app-Ba3JrPrG.css",
     "src": "resources/css/app.scss",
     "isEntry": true
   },
@@ -169,7 +169,7 @@
     "src": "resources/img/portfolio/01.png"
   },
   "resources/img/portfolio/01.webp": {
-    "file": "assets/01-DRuv5S1Q.webp",
+    "file": "assets/01-Bz3uUGmD.webp",
     "src": "resources/img/portfolio/01.webp"
   },
   "resources/img/portfolio/03.png": {
@@ -201,11 +201,11 @@
     "src": "resources/img/portfolio/backgound-01.webp"
   },
   "resources/img/portfolio/backgound-mobile-speak.jpeg": {
-    "file": "assets/backgound-mobile-speak-Kvobl6Ru.jpeg",
+    "file": "assets/backgound-mobile-speak-BjNznhPa.jpeg",
     "src": "resources/img/portfolio/backgound-mobile-speak.jpeg"
   },
   "resources/img/portfolio/backgound-mobile-speak.webp": {
-    "file": "assets/backgound-mobile-speak-C1EZ2GGL.webp",
+    "file": "assets/backgound-mobile-speak-D7AAkx5D.webp",
     "src": "resources/img/portfolio/backgound-mobile-speak.webp"
   },
   "resources/img/projects/01.png": {
@@ -333,7 +333,7 @@
     "src": "resources/img/values/bg-02.svg"
   },
   "resources/js/app.js": {
-    "file": "assets/app-Cqx4gygZ.js",
+    "file": "assets/app-Cd04B5-s.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -365,12 +365,12 @@
       "assets/Bg-C_Y7XtTb.svg",
       "assets/backgound-01-B1tlWBon.webp",
       "assets/backgound-01-BLZ5dEQi.jpeg",
-      "assets/01-DRuv5S1Q.webp",
+      "assets/01-Bz3uUGmD.webp",
       "assets/01-oelVitXJ.png",
       "assets/44-DMBNGgTj.webp",
       "assets/44-CS1QHQHJ.jpeg",
-      "assets/backgound-mobile-speak-C1EZ2GGL.webp",
-      "assets/backgound-mobile-speak-Kvobl6Ru.jpeg",
+      "assets/backgound-mobile-speak-D7AAkx5D.webp",
+      "assets/backgound-mobile-speak-BjNznhPa.jpeg",
       "assets/03-CKp71wiF.webp",
       "assets/03-BSv90--g.png",
       "assets/vk-wXzHKVNY.webp",

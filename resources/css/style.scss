@@ -1056,7 +1056,7 @@ mark {
     &__images {
         display: flex;
         @include adaptiv-value('column-gap', 30, 15, 1);
-        @include adaptiv-value('height', 169, 86, 1);
+        @include adaptiv-value('height', 169, 100, 1);
     }
 
     &__image-item {

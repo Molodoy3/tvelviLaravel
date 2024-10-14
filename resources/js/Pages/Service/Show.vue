@@ -78,8 +78,12 @@ function submit() {
 
 <template>
     <Head>
-        <title>{{cleanTitle(service.title)}}</title>
-        <meta name="description" :content="service.description">
+        <title v-html="service.title.includes('моб') ? 'ТВЭЛВИ - Разработка приложений, игр, сайтов и ПО' : service.title"></title>
+        <meta name="description" :content="service.title.includes('моб') ? 'Мы создаем мобильные приложения, игры,\n'+
+'сайты и программное обеспечение на\n'+
+'современных технологиях. Помогаем бизнесу\n'+
+'расти и увеличивать прибыль. Закажите\n'+
+'решение под ключ уже сегодня!' : service.description">
     </Head>
     <DefaultLayout>
         <section class="main-block">
