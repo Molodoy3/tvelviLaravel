@@ -97,8 +97,8 @@ function submit() {
                 </div>
                 <div class="main-block__image">
                     <picture>
-                        <source srcset='../../../img/main-block/telephones.webp' type='image/webp'>
-                        <img src='../../../img/main-block/telephones.png' alt='telephones'>
+                        <source :srcset='getStringUntilDot(service.image) + ".webp"' type='image/webp'>
+                        <img :src='service.image' alt='step image'>
                     </picture>
                 </div>
             </div>

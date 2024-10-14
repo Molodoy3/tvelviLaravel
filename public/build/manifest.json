@@ -148,14 +148,6 @@
     "file": "assets/background-D-_MFx9t.webp",
     "src": "resources/img/main-block/background.webp"
   },
-  "resources/img/main-block/telephones.png": {
-    "file": "assets/telephones-CWv6t8G7.png",
-    "src": "resources/img/main-block/telephones.png"
-  },
-  "resources/img/main-block/telephones.webp": {
-    "file": "assets/telephones-CfDAKSy-.webp",
-    "src": "resources/img/main-block/telephones.webp"
-  },
   "resources/img/portfolio/01.png": {
     "file": "assets/01-oelVitXJ.png",
     "src": "resources/img/portfolio/01.png"
@@ -321,7 +313,7 @@
     "src": "resources/img/values/bg-02.svg"
   },
   "resources/js/app.js": {
-    "file": "assets/app-SxgPy7BK.js",
+    "file": "assets/app-dcU5aWLG.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -368,8 +360,6 @@
       "assets/telegram-CRdGufu2.png",
       "assets/background-D-_MFx9t.webp",
       "assets/background-B5LxNRYs.png",
-      "assets/telephones-CfDAKSy-.webp",
-      "assets/telephones-CWv6t8G7.png",
       "assets/background-8P8AnTfe.webp",
       "assets/background-XwIS6qQi.png",
       "assets/01-0xgOzGvl.webp",
