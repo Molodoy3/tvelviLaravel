@@ -73,7 +73,9 @@ function submit() {
         preserveScroll: true
     });
 }
-
+function formattedText(text) {
+    return text.replace(/\n/g, '<br>');
+}
 </script>
 
 <template>
@@ -426,7 +428,7 @@ function submit() {
                 </div>
             </div>
         </section>
-<!--        <section class="articles">
+        <section class="articles">
             <div class='articles__container'>
                 <h2 class="articles__title title">Полезные статьи <br>
                     <mark>о твэлви</mark>
@@ -434,13 +436,10 @@ function submit() {
                 <div class="articles__items">
                     <article v-for="article in lastArticles" class="articles__item">
                         <div class="articles__image">
-                            <picture>
-                                <source :srcset='getStringUntilDot(article.image) + ".webp"' type='image/webp'>
-                                <img :src='article.image' alt='article image'>
-                            </picture>
+                            <img :src="'/article/image/' + article.id" :alt="article.title"/>
                         </div>
                         <h4 class="articles__item-title">{{ article.title }}</h4>
-                        <div class="articles__text">{{ truncatedDescription(article.description) }}
+                        <div class="articles__text" v-html="truncatedDescription(formattedText(article.description))">
                         </div>
                         <footer class="articles__footer">
                             <div class="articles__date">{{ article.created_at }}</div>
@@ -453,7 +452,7 @@ function submit() {
                     <a :href="route('articles')" class="articles__button-more button-more">Читать все статьи</a>
                 </div>
             </div>
-        </section>-->
+        </section>
         <about-section/>
         <section id="connect" class="connect">
             <div class='connect__container'>
