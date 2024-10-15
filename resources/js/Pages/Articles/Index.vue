@@ -40,7 +40,7 @@ function formattedText(text) {
                             <img :src="'/article/image/' + article.id" :alt="article.title"/>
                         </div>
                         <h4 class="articles__item-title">{{article.title}}</h4>
-                        <div class="articles__text">{{truncatedDescription(formattedText(article.description))}}
+                        <div class="articles__text" v-html="truncatedDescription(formattedText(article.description))">
                         </div>
                         <footer class="articles__footer">
                             <div class="articles__date">{{article.created_at}}</div>
