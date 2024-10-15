@@ -7,7 +7,6 @@ function isWhiteHeader() {
 }
 
 function isActiveLink(route) {
-    console.log(currentLink)
     return route === currentLink ? 'active' : ''
 }
 </script>
@@ -29,12 +28,17 @@ function isActiveLink(route) {
                                 <li class="menu__item" :class="isActiveLink('')"><a :href="route('index')"
                                                                                     class='menu__link'>Главная</a></li>
                                 <li class="menu__item" :class="isActiveLink('services')">
-                                    <a href='/' class='menu__link unactive'>Услуги</a>
-                                    <div data-spoller tabindex='-1' class="menu__arrow ic-arrow"></div>
+                                    <span class="menu__multilink" data-spoller tabindex='-1'>
+                                               <a href='/' class='menu__link unactive'>Услуги</a>
+                                        <div class="menu__arrow ic-arrow"></div>
+                                    </span>
+
                                     <div class="menu__sub-list">
                                         <ul>
                                             <li v-for="service in $page.props.services[0]">
-                                                <a :class="[isActiveLink(service.slug),isActiveLink(service.slug + '/order'), service.slug === 'mobdev' ? isActiveLink('') : null]" :href="route('service', service.slug)" class="menu__sub-link">{{service.altTitle}}</a>
+                                                <a :class="[isActiveLink(service.slug),isActiveLink(service.slug + '/order'),
+                                                 service.slug === 'mobdev' ? isActiveLink('') : null]"
+                                                   :href="service.slug === 'mobdev' ? '/' : route('service', service.slug)" class="menu__sub-link">{{service.altTitle}}</a>
                                             </li>
                                         </ul>
                                     </div>
