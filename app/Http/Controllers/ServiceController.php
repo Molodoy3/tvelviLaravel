@@ -19,7 +19,7 @@ class ServiceController extends Controller
 
         return Inertia::render('Service/Show', [
             'service' => Service::query()->where('slug', $slug)->firstOrFail(),
-            'lastArticles' => Article::query()->orderByDesc('created_at')->take(3)->get(),
+            'lastArticles' => Article::query()->select('id', 'title', 'description', 'created_at')->orderByDesc('created_at')->take(3)->get(),
             'lastReviews' => Review::query()->orderByDesc('created_at')->take(4)->get()
         ]);
     }

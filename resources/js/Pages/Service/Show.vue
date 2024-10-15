@@ -426,7 +426,7 @@ function submit() {
                 </div>
             </div>
         </section>
-        <section class="articles">
+<!--        <section class="articles">
             <div class='articles__container'>
                 <h2 class="articles__title title">Полезные статьи <br>
                     <mark>о твэлви</mark>
@@ -453,7 +453,7 @@ function submit() {
                     <a :href="route('articles')" class="articles__button-more button-more">Читать все статьи</a>
                 </div>
             </div>
-        </section>
+        </section>-->
         <about-section/>
         <section id="connect" class="connect">
             <div class='connect__container'>
