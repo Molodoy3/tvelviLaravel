@@ -2337,7 +2337,7 @@ mark {
 /*=============================================================================================================*/
 .article {
     @include adaptiv-value('padding-top', 148, 100, 1);
-    @include adaptiv-value('padding-bottom', 90, 80, 1);
+    @include adaptiv-value('padding-bottom', 215, 80, 1);
     flex: 1 1 auto;
     background-color: #fff;
 
