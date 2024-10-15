@@ -2337,7 +2337,7 @@ mark {
 /*=============================================================================================================*/
 .article {
     @include adaptiv-value('padding-top', 148, 100, 1);
-    @include adaptiv-value('padding-bottom', 215, 80, 1);
+    @include adaptiv-value('padding-bottom', 150, 80, 1);
     flex: 1 1 auto;
     background-color: #fff;
 
@@ -2352,7 +2352,7 @@ mark {
         @include adaptiv-value('padding-right', 20, 15, 1);
         @include adaptiv-value('padding-left', 20, 15, 1);
         background-color: rgb(247, 248, 252);
-        max-width: rem(800);
+        max-width: rem(950);
         border-radius: rem(18);
     }
     &__header {
