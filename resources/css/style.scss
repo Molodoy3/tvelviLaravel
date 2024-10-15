@@ -3292,6 +3292,7 @@ mark {
         @include adaptiv-value('font-size', 44, 24, 1);
         @include adaptiv-value('margin-bottom', 15, 5, 1);
         font-weight: 700;
+        line-height: 150%;
     }
 
     &__term {
