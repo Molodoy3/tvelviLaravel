@@ -10,7 +10,9 @@ function getStringUntilDot(str) {
     const index = str.lastIndexOf('.');
     return index === -1 ? str : str.substring(0, index);
 }
-
+function formattedText() {
+    return article.description.replace(/\n/g, '<br>');
+}
 </script>
 
 <template>
@@ -27,7 +29,7 @@ function getStringUntilDot(str) {
                     </div>
                     <h1 class="article__title">{{article.title}}</h1>
                 </header>
-                <div class="article__body" v-html="article.description">
+                <div class="article__body" v-html="formattedText()">
 
                 </div>
                 <footer class="article__footer">
