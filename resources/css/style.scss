@@ -2342,13 +2342,19 @@ mark {
     background-color: #fff;
 
     &__container {
+
+
+
+    }
+    &__content{
         @include adaptiv-value('padding-top', 22, 14, 1);
         @include adaptiv-value('padding-bottom', 20, 14, 1);
         @include adaptiv-value('padding-right', 20, 15, 1);
         @include adaptiv-value('padding-left', 20, 15, 1);
         background-color: rgb(247, 248, 252);
+        max-width: rem(800);
+        border-radius: rem(18);
     }
-
     &__header {
         display: flex;
         align-items: center;
@@ -2389,6 +2395,7 @@ mark {
         font-size: rem(12);
         color: rgb(103, 103, 103);
         display: block;
+
         @include adaptiv-value('margin-bottom', 32, 19, 1);
     }
 

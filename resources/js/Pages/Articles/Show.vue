@@ -23,20 +23,23 @@ function formattedText() {
     <DefaultLayout>
         <article class="article">
             <div class='article__container'>
-                <header class="article__header">
-                    <div class="article__image">
-                        <img :src="'/article/image/' + article.id" :alt="article.title"/>
-                    </div>
-                    <h1 class="article__title">{{article.title}}</h1>
-                </header>
-                <div class="article__body" v-html="formattedText()">
 
+                <div class="article__content">
+                    <header class="article__header">
+                        <div class="article__image">
+                            <img :src="'/article/image/' + article.id" :alt="article.title"/>
+                        </div>
+                        <h1 class="article__title">{{article.title}}</h1>
+                    </header>
+                    <div class="article__body" v-html="formattedText()">
+                    </div>
+                    <footer class="article__footer">
+                        <div class="article__date">{{article.created_at}}</div>
+                        <a :href="route('articles')"
+                           class="article__button articles__button simple-button ic-arrow-link">Назад</a>
+                    </footer>
                 </div>
-                <footer class="article__footer">
-                    <div class="article__date">{{article.created_at}}</div>
-                    <a :href="route('articles')"
-                       class="article__button articles__button simple-button ic-arrow-link">Назад</a>
-                </footer>
+
             </div>
         </article>
     </DefaultLayout>
