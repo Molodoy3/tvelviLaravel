@@ -27,8 +27,8 @@ function getStringUntilDot(str) {
                     </div>
                     <h1 class="article__title">{{article.title}}</h1>
                 </header>
-                <div class="article__body">
-                    {{article.description}}
+                <div class="article__body" v-html="article.description">
+
                 </div>
                 <footer class="article__footer">
                     <div class="article__date">{{article.created_at}}</div>
