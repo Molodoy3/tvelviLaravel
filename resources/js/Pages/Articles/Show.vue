@@ -3,7 +3,7 @@
 import DefaultLayout from "../../Layouts/DefaultLayout.vue";
 import {Head} from "@inertiajs/vue3";
 
-defineProps({
+const {article} = defineProps({
     'article': Object
 })
 function getStringUntilDot(str) {
