@@ -432,7 +432,9 @@
         color: #ffffff;
         //padding: 10px 15px 10px 15px;
         transition: color 0.3s ease;
-
+        &.active{
+            color: var(--red);
+        }
         @media (any-hover: hover) {
             &:hover {
                 color: var(--red);

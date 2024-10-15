@@ -1,12 +1,13 @@
 <script setup lang="ts">
 
-const currentLink = new URL(location.href).pathname.split('/').pop();
+const currentLink = new URL(location.href).pathname.slice(1);
 
 function isWhiteHeader() {
     return currentLink !== "" ? "header_white" : "";
 }
 
 function isActiveLink(route) {
+    console.log(currentLink)
     return route === currentLink ? 'active' : ''
 }
 </script>
@@ -33,7 +34,7 @@ function isActiveLink(route) {
                                     <div class="menu__sub-list">
                                         <ul>
                                             <li v-for="service in $page.props.services[0]">
-                                                <a :href="route('service', service.slug)" class="menu__sub-link">{{service.altTitle}}</a>
+                                                <a :class="[isActiveLink(service.slug),isActiveLink(service.slug + '/order'), service.slug === 'mobdev' ? isActiveLink('') : null]" :href="route('service', service.slug)" class="menu__sub-link">{{service.altTitle}}</a>
                                             </li>
                                         </ul>
                                     </div>

@@ -10,7 +10,7 @@
 /*Основные стили /=============================================================================*/
 body {
     //font-size: rem($mainFontSize);
-    line-height: perc(15, 12);
+    //line-height: perc(15, 12);
     @include adaptiv-value('font-size', $mainFontSize, 12, 1);
     font-family: "Montserrat", sans-serif;
 
@@ -3292,7 +3292,7 @@ mark {
         @include adaptiv-value('font-size', 44, 24, 1);
         @include adaptiv-value('margin-bottom', 15, 5, 1);
         font-weight: 700;
-        line-height: 150%;
+        line-height: 110%;
     }
 
     &__term {
