@@ -14,6 +14,7 @@ class Article extends Model
         'title',
         'description',
         'image',
+        'image_file',
         'created_at'
     ];
     public function getFormattedCreatedAtAttribute()

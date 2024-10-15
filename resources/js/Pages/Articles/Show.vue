@@ -23,10 +23,7 @@ function getStringUntilDot(str) {
             <div class='article__container'>
                 <header class="article__header">
                     <div class="article__image">
-                        <picture>
-                            <source :srcset='getStringUntilDot(article.image) + ".webp"' type='image/webp'>
-                            <img :src='article.image' alt='article image'>
-                        </picture>
+                        <img :src="'/article/image/' + article.id" :alt="article.title"/>
                     </div>
                     <h1 class="article__title">{{article.title}}</h1>
                 </header>

@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
@@ -11,8 +12,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('services', function (Blueprint $table) {
-            //$table->string('slug')->unique();
+        Schema::table('articles', function (Blueprint $table) {
+            DB::statement("ALTER TABLE articles ADD image_file LONGBLOB AFTER image");
+            $table->dropColumn('image');
         });
     }
 
@@ -21,8 +23,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('services', function (Blueprint $table) {
-            $table->dropColumn('slug');
+        Schema::table('articles', function (Blueprint $table) {
+            $table->dropColumn('image_file');
         });
     }
 };

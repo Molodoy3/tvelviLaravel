@@ -25,6 +25,8 @@ Route::post('/reviews/store', [ReviewController::class, 'store'])->name('reviews
 //статьи
 Route::get('/articles', [ArticleController::class, 'index'])->name('articles');
 Route::get('/article/{article}', [ArticleController::class, 'show'])->name('article.show');
+//получение картинки для статьи
+Route::get('/article/image/{article}', [ArticleController::class, 'image'])->name('article.image');
 
 //отправка заявки
 Route::post('/application-send', [ApplicationController::class, 'send'])->name('applicationSend');

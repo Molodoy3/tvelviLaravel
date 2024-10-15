@@ -35,11 +35,7 @@ function truncatedDescription(description) {
                 <div class="articles__items">
                     <article v-for="article in articles.data" class="articles__item">
                         <div class="articles__image">
-                            <picture v-if="getStringUntilDot(article.image)">
-                                <source :srcset='getStringUntilDot(article.image) + ".webp"' type='image/webp'>
-                                <img :src='article.image' alt='article image'>
-                            </picture>
-                            <img v-else :src='article.image' alt='article image'>
+                            <img :src="'/article/image/' + article.id" :alt="article.title"/>
                         </div>
                         <h4 class="articles__item-title">{{article.title}}</h4>
                         <div class="articles__text">{{truncatedDescription(article.description)}}

@@ -12,10 +12,9 @@ class ArticleData extends Data
         public ?int    $id,
         #[Max(255)]
         public string  $title,
-        #[Max(5000)]
+        #[Max(10000)]
         public ?string $description,
-        #[Max(255)]
-        public string  $image,
+        public string  $image_file,
         public ?Date $created_at
     )
     {
