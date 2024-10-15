@@ -18,7 +18,9 @@ function truncatedDescription(description) {
     if (description.length <= 200) return description;
     return description.substring(0, 200) + '...';
 }
-
+function formattedText(text) {
+    return text.replace(/\n/g, '<br>');
+}
 </script>
 
 <template>
@@ -38,7 +40,7 @@ function truncatedDescription(description) {
                             <img :src="'/article/image/' + article.id" :alt="article.title"/>
                         </div>
                         <h4 class="articles__item-title">{{article.title}}</h4>
-                        <div class="articles__text">{{truncatedDescription(article.description)}}
+                        <div class="articles__text">{{truncatedDescription(formattedText(article.description))}}
                         </div>
                         <footer class="articles__footer">
                             <div class="articles__date">{{article.created_at}}</div>
