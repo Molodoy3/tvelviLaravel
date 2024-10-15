@@ -80,7 +80,7 @@ function formattedText(text) {
 
 <template>
     <Head>
-        <title v-html="service.title.includes('моб') ? 'ТВЭЛВИ - Разработка приложений, игр, сайтов и ПО' : service.title"></title>
+        <title>{{service.title.includes('моб') ? 'ТВЭЛВИ - Разработка приложений, игр, сайтов и ПО' : cleanTitle(service.title)}}</title>
         <meta name="description" :content="service.title.includes('моб') ? 'Мы создаем мобильные приложения, игры,\n'+
 'сайты и программное обеспечение на\n'+
 'современных технологиях. Помогаем бизнесу\n'+
@@ -282,14 +282,14 @@ function formattedText(text) {
                 <div class="values__col values__col_main">
                     <img class="values__background" src='../../../img/values/bg-01.svg' alt='фон'>
                     <div class="values__category">Минимальные</div>
-                    <div class="values__price">от 300 тысяч</div>
-                    <div class="values__term">от 5 недель</div>
+                    <div class="values__price">{{service.price_min}}</div>
+                    <div class="values__term">{{service.term_min}}</div>
                 </div>
                 <div class="values__col values__col_main">
                     <img class="values__background" src='../../../img/values/bg-02.svg' alt='фон'>
                     <div class="values__category">Средние</div>
-                    <div class="values__price">3 миллиона</div>
-                    <div class="values__term">4 месяца</div>
+                    <div class="values__price">{{service.price_middle}}</div>
+                    <div class="values__term">{{service.term_middle}}</div>
                 </div>
                 <div class="values__bottom">
 
