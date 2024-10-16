@@ -7,7 +7,8 @@ use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
-
+Route::get('/test', [MainController::class, 'test'])->name('test');
+Route::get('/get_last_new', [MainController::class, 'getLastNew'])->name('getLastNew');
 //основные страницы
 Route::get('/', [ServiceController::class, 'show'])->name('index');
 Route::get('/about', [MainController::class, 'about'])->name('about');
@@ -38,5 +39,4 @@ Route::get('/{service}', [ServiceController::class, 'show'])->name('service'); /
 Route::get('/{service}/order', [ServiceController::class, 'showOrder'])->name('serviceOrder'); //страница для просмотра подробной инф-ции заказа + заказать
 
 
-Route::get('/test', [MainController::class, 'test'])->name('test');
-Route::get('/get_last_new', [MainController::class, 'getLastNew'])->name('getLastNew');
+

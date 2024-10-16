@@ -18,15 +18,18 @@ class MainController extends Controller
     }*/
     public function getLastNew()
     {
+        //dd('4');
         $token = "6517915665:AAE1msth-dyzOQrikWk2DtE_-LvEARu8XwM";
         //$content = file_get_contents("php://input");
         //$update = json_decode($content, true);
 
         $url = "https://api.telegram.org/bot" . $token . '/sendMessage?chat_id=' . 992083441 . '&text=здорова задолбал';
-        file_get_contents($url);
+
+        dd(file_get_contents($url));
     }
     public function test()
     {
+        //dd(9);
         $token = "6517915665:AAE1msth-dyzOQrikWk2DtE_-LvEARu8XwM";
         $channel_id = "1002393225294"; // ID вашего канала
         $webhook_url = "https://tvelvi.com/get_last_new"; // URL вашего вебхука
