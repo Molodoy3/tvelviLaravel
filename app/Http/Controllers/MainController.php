@@ -19,8 +19,11 @@ class MainController extends Controller
     public function getLastNew()
     {
         $token = "6517915665:AAE1msth-dyzOQrikWk2DtE_-LvEARu8XwM";
-        $content = file_get_contents("php://input");
-        $update = json_decode($content, true);
+        //$content = file_get_contents("php://input");
+        //$update = json_decode($content, true);
+
+        $url = "https://api.telegram.org/bot" . $token . '/sendMessage?chat_id=' . 992083441 . '&text=здорова задолбал';
+        file_get_contents($url);
     }
     public function test()
     {
