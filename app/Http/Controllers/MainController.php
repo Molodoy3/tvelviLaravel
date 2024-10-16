@@ -25,7 +25,11 @@ class MainController extends Controller
 
         $url = "https://api.telegram.org/bot" . $token . '/sendMessage?chat_id=' . 992083441 . '&text=здорова задолбал';
 
-        dd(file_get_contents($url));
+        //dd(file_get_contents($url));
+        header('Content-Type: application/json');
+        return response()->json(['status' => 'success']);
+
+        //http_response_code(200); // Устанавливаем статус 200 OK
     }
     public function test()
     {
