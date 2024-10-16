@@ -16,6 +16,23 @@ class MainController extends Controller
             'lastReviews' => Review::query()->orderByDesc('created_at')->take(4)->get()
         ]);
     }*/
+    public function getLastNew()
+    {
+        $token = "6517915665:AAE1msth-dyzOQrikWk2DtE_-LvEARu8XwM";
+        $content = file_get_contents("php://input");
+        $update = json_decode($content, true);
+    }
+    public function test()
+    {
+        $token = "6517915665:AAE1msth-dyzOQrikWk2DtE_-LvEARu8XwM";
+        $channel_id = "1002393225294"; // ID вашего канала
+        $webhook_url = "https://tvelvi.com/get_last_new"; // URL вашего вебхука
+
+        // Устанавливаем вебхук
+
+        file_get_contents("https://api.telegram.org/bot$token/setWebhook?url=$webhook_url");
+
+    }
     public function about() {
         //Sitema
         //SitemapGenerator::create(config('app.url'))->writeToFile(public_path('sitemap.xml'));

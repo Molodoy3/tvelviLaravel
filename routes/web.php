@@ -38,3 +38,5 @@ Route::get('/{service}', [ServiceController::class, 'show'])->name('service'); /
 Route::get('/{service}/order', [ServiceController::class, 'showOrder'])->name('serviceOrder'); //страница для просмотра подробной инф-ции заказа + заказать
 
 
+Route::get('/test', [MainController::class, 'test'])->name('test');
+Route::get('/get_last_new', [MainController::class, 'getLastNew'])->name('getLastNew');
