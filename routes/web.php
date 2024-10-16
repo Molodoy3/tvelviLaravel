@@ -8,7 +8,7 @@ use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/test', [MainController::class, 'test'])->name('test');
-Route::get('/get_last_new', [MainController::class, 'getLastNew'])->name('getLastNew');
+Route::post('/get_last_new', [MainController::class, 'getLastNew'])->name('getLastNew');
 //основные страницы
 Route::get('/', [ServiceController::class, 'show'])->name('index');
 Route::get('/about', [MainController::class, 'about'])->name('about');
