@@ -69,6 +69,7 @@ import WindowApplication from "../Components/WindowApplication.vue";
         </main>
         <Footer></Footer>
     </div>
+
 </template>
 
 <style scoped>

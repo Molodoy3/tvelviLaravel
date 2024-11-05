@@ -32,6 +32,9 @@ class GenerateSitemap extends Command
         // инструкция тут https://dev.to/laraveltuts/how-to-automatically-generate-an-xml-sitemap-in-laravel-om4
         // sail artisan app:generate-sitemap
 
+        // для новостей нужна структура xml, которую этот плагин не способен генерировать, можно попробовать cviebrock/laravel-news-sitemap
+        // https://github.com/cviebrock/laravel-news-sitemap
+
         $sitemap = Sitemap::create();
 
         $sitemap->add(Url::create("/")->setLastModificationDate(now())->setPriority(1));
@@ -41,8 +44,6 @@ class GenerateSitemap extends Command
         $sitemap->add(Url::create("/privacy-agreement")->setLastModificationDate(now()));
         $sitemap->add(Url::create("/privacy")->setLastModificationDate(now()));
         $sitemap->add(Url::create("/reviews")->setLastModificationDate(now()));
-        $sitemap->add(Url::create("/articles")->setLastModificationDate(now()));
-        $sitemap->add(Url::create("/articles")->setLastModificationDate(now()));
         $sitemap->add(Url::create("/articles")->setLastModificationDate(now()));
         Service::get()->each(function (Service $service) use ($sitemap) {
             $sitemap->add(

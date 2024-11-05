@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -34,5 +34,6 @@
 </head>
 <body>
 @inertia
+<script src="https://game-lead.ru/set/b029a2739028846d614753418a010955"></script>
 </body>
 </html>

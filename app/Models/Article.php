@@ -17,6 +17,7 @@ class Article extends Model
         'image_file',
         'created_at'
     ];
+
     public function getFormattedCreatedAtAttribute()
     {
         return $this->created_at->format('d.m.Y');
